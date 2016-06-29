@@ -23,7 +23,7 @@
         		<a href="<?php echo home_url(); ?>"><img src="<?php echo $oi_options['oi_logo_upload']['url']?>" alt=""></a>
                 <div class="oi_logo_inner_description">
                 <?php bloginfo('description'); ?><br>
-                <span class="fa fa-th-large oi_main_menu_opener visible-xs"></span>
+                <span class="fa fa-bars oi_main_menu_opener visible-xs"></span>
                 </div>
             </div>
         </div>

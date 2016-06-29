@@ -6,7 +6,8 @@
 #TODO
 - transfer current styling
 - fix oi_logo_place section for mobile
-- fix mobile menu icon
+- fix mobile menu icon(x)
+- fix logo container
 - fix mobile post feature images
 - update homepage styling
 - update post page styling
@@ -18,7 +19,7 @@
 - remove category section in mobile header (x)
 - remove social media from header (x)
 - remove social media from post formats (x)
-- remove perm. header plugin. use something native
+- remove perm. header plugin. use something native(x)
 - remove small side bar that appears in center (x)
 - even sidebar and main page 70% to 30% (x)
 - header section 3 to 2(x)

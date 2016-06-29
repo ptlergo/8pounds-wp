@@ -8,6 +8,15 @@
     width: 70%;
   }
 
+  /*logo container*/
+  .oi_logo_inner_holder img{
+    width: 30%;
+  }
+  .oi_logo_inner_holder {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+
   /*HEADER RESTYLING*/
   .oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder{
     height: 170px;
@@ -17,9 +26,27 @@
 /*MOBILE*/
 @media (max-width: 767px) and (min-width: 0px) {
   /*sticky nav*/
-  .oi_logo_place{
+  .oi_head_holder{
     position: fixed;
     top: 0;
+  }
+  .oi_logo_inner_holder img{
+    width: 40%;
+    float: left;
+  }
+
+  .oi_main_menu_opener{
+    float: right;
+    color: #ffffff;
+    margin-top: -25px;
+  }
+
+  .oi_single_post{
+    padding-top: 20%;
+  }
+
+  .oi_logo_place{
+    height: 100px !important;
   }
 }
 
