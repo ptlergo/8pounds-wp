@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?php wp_title('| ',true,'right'); bloginfo('name'); ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="<?php bloginfo('description'); ?>" />  
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
     <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -16,15 +16,15 @@
 <body  <?php body_class(); ?>>
 <div class="oi_head_holder">
 	<div class="oi_smalldev_holder hidden-lg">
-		<?php 
+		<?php
 		//list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
-		
-		$orderby      = 'name'; 
+
+		$orderby      = 'name';
 		$show_count   = 0;      // 1 for yes, 0 for no
 		$pad_counts   = 0;      // 1 for yes, 0 for no
 		$hierarchical = 1;      // 1 for yes, 0 for no
 		$title        = '';
-		
+
 		$args = array(
 		  'orderby'      => $orderby,
 		  'show_count'   => $show_count,
@@ -57,9 +57,9 @@
             </form>
             </div>
         	<span class="fa fa-search-plus hidden-xs"></span>
-            
+
         	<div class="clearfix"></div>
-			<?php	 		 		 		 		 		 	
+			<?php
 			if ( has_nav_menu( 'main_menu' ) ){
 			$walker = new OI_Walker;
 				wp_nav_menu(array(
@@ -91,16 +91,16 @@
 		$categories = get_categories( $args );
 		?>
         <h6><?php _e('Categories', "orangeidea"); ?></h6>
-        
-               <?php 
+
+               <?php
 		//list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
-		
-		$orderby      = 'name'; 
+
+		$orderby      = 'name';
 		$show_count   = 0;      // 1 for yes, 0 for no
 		$pad_counts   = 0;      // 1 for yes, 0 for no
 		$hierarchical = 1;      // 1 for yes, 0 for no
 		$title        = '';
-		
+
 		$args = array(
 		  'orderby'      => $orderby,
 		  'show_count'   => $show_count,
@@ -117,7 +117,7 @@
     <div class="oi_rigth_menu_place">
     	<div class="oi_rigth_menu_place_top">
 			<?php if (!$user_ID) {?>
-        	<a class="oi_login oi_member" href="#"><span class="fa fa-sign-in"></span> <?php _e('Log In', "orangeidea"); ?></a><a class="oi_registration oi_member" href="#"><span class="fa fa-user"></span> <?php _e('Register', "orangeidea"); ?></a>    
+        	<a class="oi_login oi_member" href="#"><span class="fa fa-sign-in"></span> <?php _e('Log In', "orangeidea"); ?></a><a class="oi_registration oi_member" href="#"><span class="fa fa-user"></span> <?php _e('Register', "orangeidea"); ?></a>
     		<?php }else{
 					$current_user = wp_get_current_user();
 					$roles = $current_user->roles;
@@ -128,7 +128,7 @@
                     <div class="oi_welcome_area">
                     <span class="oi_welcome_area_welcome"><?php _e("Welcome" , "orangeidea"); ?></span>
                     <?php
-					
+
 					echo $oi_username;
 					echo get_avatar( $oi_userid, 20 );
 					?>
@@ -154,7 +154,7 @@
                     <div class="col-md-12 col-sm-12 text-rigth">
                     	<button class="oi_form_submit oi_login_submit" type="submit" name="wp-submit" id="wp-submit"><?php _e('Log In', "orangeidea"); ?></button>
                     </div>
-                    
+
                 </div>
                 </form>
             </div>
@@ -184,29 +184,14 @@
                     <div class="col-md-12 col-sm-12 text-rigth">
                     	<button class="oi_form_submit oi_register_submit" type="submit" name="wp-submit_register" id="wp-submit_register"><?php _e('Register', "orangeidea"); ?></button>
                     </div>
-                    
+
                 </div>
                 </form>
             </div>
-            
-            
+
+
         </div>
-        <div class="oi_rigth_menu_place_bottom">
-            <div class="clearfix"></div>
-				<?php echo  do_shortcode($oi_options['top_right'])?>
-            <div class="oi_rigth_menu_place_bottom_social">
-				<?php _e('We are in Social', "orangeidea"); ?>
-            </div>
-            <div class="oi_soc_icons">
-                <?php if ($oi_options['footer_social_tw'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_tw']) ?>" title="Twitter" target="_blank"><div class="menu_icon_t"></div></a><?php }; ?>
-                <?php if ($oi_options['footer_social_fb'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_fb']) ?>" title="Facebook" target="_blank"><div class="menu_icon_facebook"></div></a><?php }; ?>
-                <?php if ($oi_options['footer_social_go'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_go']) ?>" title="Google+" target="_blank"><div class="menu_icon_google"></div></a><?php }; ?>
-                <?php if ($oi_options['footer_social_pi'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_pi']) ?>" title="Pinterest" target="_blank"><div class="menu_icon_pi"></div></a><?php }; ?>
-                <?php if ($oi_options['footer_social_li'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_li']) ?>" title="LinkedIn" target="_blank"><div class="menu_icon_in"></div></a><?php }; ?>
-                <?php if ($oi_options['footer_social_dr'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_dr']) ?>" title="Dribbble" target="_blank"><div class="menu_icon_dribbble"></div></a><?php }; ?>
-                <?php if ($oi_options['footer_social_yt'] != "") {?><a href="<?php echo stripslashes($oi_options['footer_social_yt']) ?>" title="YouTube" target="_blank"><div class="menu_icon_youtube"></div></a><?php }; ?>
-            </div>
-    	</div>
+
     </div>
 </div>
 <div  class="clearfix"></div>
@@ -220,7 +205,7 @@
         </div>
         <span class="fa fa-search-plus"></span>
         <div class="clearfix"></div>
-        <?php	 		 		 		 		 		 	
+        <?php
         if ( has_nav_menu( 'main_menu' ) ){
         $walker = new OI_Walker;
             wp_nav_menu(array(
