@@ -2,8 +2,10 @@
   styling by Patrick Funom
 */
 
-.oi_posts_holder{
-  width: 70%;
+@media only screen and (min-width: 900px) {
+  .oi_posts_holder, .oi_logo_place{
+    width: 70%;
+  }
 }
 
 /*@media only screen and (min-width: 900px) {
