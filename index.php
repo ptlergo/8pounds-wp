@@ -14,7 +14,7 @@ $more = 0;
 </style>
 <?php
     // Loop
-	$args = array( 
+	$args = array(
 		'post_type' => 'post',
 		'posts_per_page' => 20,
 		'meta_query' => array(
@@ -31,21 +31,21 @@ $more = 0;
 	$catt = get_the_terms( $post->ID, 'category' );
 	if (isset($catt) && ($catt!='')){
 	$slugg = '';
-	$slug = ''; 
+	$slug = '';
 	foreach($catt  as $vallue=>$key){
 		$slugg .= strtolower($key->slug) . " ";
 		$slug  .= ''.$key->name.', ';
 	}
-	
+
 	};
 	?>
- 
- 
+
+
 <div class="oi_big_sidebar">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar"))  ?>                
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar"))  ?>
 </div>
 
-   
+
 <div class="oi_post_sticky_holder oi_flex_loading oi_vc_gal">
     <ul class="slides">
 	<?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
@@ -63,7 +63,7 @@ $more = 0;
             </div>
         </div>
         </li>
-	<?php endwhile;  ?> 
+	<?php endwhile;  ?>
     <?php endif; ?>
 
     </ul>
@@ -78,9 +78,9 @@ $more = 0;
 
 <div id="posts_holder" class="oi_posts_holder" data-sticky_parent>
 	<?php if ( !is_archive() ) { ?>
-	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts('paged='.$paged.'&cat='.$cat); ?>		
-    <?php } ?> 
-    <?php if (!(have_posts())) { ?><h3 class="page_title">There are no posts</h3><?php }  ?>   
+	<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; query_posts('paged='.$paged.'&cat='.$cat); ?>
+    <?php } ?>
+    <?php if (!(have_posts())) { ?><h3 class="page_title">There are no posts</h3><?php }  ?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     	<?php $layout = get_post_meta($post->ID, 'posts_layout', 1);
 		if ($layout == 'Wide'){?>
@@ -96,25 +96,16 @@ $more = 0;
             </div>
         </div>
         <?php };?>
-    <?php endwhile;  ?> 
+    <?php endwhile;  ?>
 	<?php endif; ?>
     <?php if (function_exists('wp_corenavi')) { ?><div class="oi_pg"><?php wp_corenavi(); ?><div class="clearfix"></div></div><?php }?>
 </div>
 
 <div class="oi_small_sidebar_bottom" data-sticky_column>
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Small Sidebar"))  ?>                
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Small Sidebar"))  ?>
 </div>
 <div class="oi_big_sidebar_bottom visible-lg">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar Bottom"))  ?>                
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar Bottom"))  ?>
 </div>
-<div class="oi_small_dev_sidebar_holder hidden-lg">
-<div class="oi_small_sidebar_bottom_small_dev">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Small Sidebar"))  ?>                
-</div>
-<div class="oi_big_sidebar_bottom_small_dev">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar Bottom"))  ?>                
-</div>
-</div>
-
 
 <?php get_footer(); ?>

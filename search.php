@@ -12,35 +12,25 @@
     	<h2 style="margin-top:0px;"><?php _e("Search Results for:","orangeidea"); ?> <strong class="colored"><?php echo get_search_query();?></strong></h2>
     	<hr>
     </div>
-    <?php };?>   
+    <?php };?>
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		
+
         <div <?php post_class('oi_post'); ?> id="post-<?php the_ID(); ?>">
             <div class="blog_item">
                 <?php $format = get_post_format(); get_template_part( 'framework/post-format/format', $format );   ?>
             </div>
         </div>
-    <?php endwhile;  ?> 
+    <?php endwhile;  ?>
 	<?php endif; ?>
     <?php if (function_exists('wp_corenavi')) { ?><div class="oi_pg"><?php wp_corenavi(); ?><div class="clearfix"></div></div><?php }?>
 </div>
 
 <div class="oi_small_sidebar_bottom visible-lg" data-sticky_column>
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Small Sidebar"))  ?>                
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Small Sidebar"))  ?>
 </div>
 <div class="oi_big_sidebar_bottom visible-lg">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar Bottom"))  ?>                
+	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar Bottom"))  ?>
 </div>
-
-<div class="oi_small_dev_sidebar_holder hidden-lg">
-<div class="oi_small_sidebar_bottom_small_dev">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Small Sidebar"))  ?>                
-</div>
-<div class="oi_big_sidebar_bottom_small_dev">
-	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("Big Sidebar Bottom"))  ?>                
-</div>
-</div>
-
 
 
 <?php get_footer(); ?>
