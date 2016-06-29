@@ -1,0 +1,56 @@
+/*
+Welcome to Custom CSS!
+
+To learn how this works, see http://wp.me/PEmnE-Bt
+*/
+.oi_single_post_conent iframe {
+	max-height: 100% !important;
+}
+
+@media only screen and (min-width: 900px) {
+	.wrapfixed {
+		position: static !important;
+	}
+
+	.single-format-image .oi_single_post_title img {
+		float: left;
+	}
+
+	.hidden-lg oi_small_dev_singlepost_meta {
+		width: 10%;
+	}
+
+	.single-format-image .oi_single_post_conent p iframe {
+	}
+
+	p .jp-relatedposts-post-context {
+		display: none;
+	}
+
+	.instagram-media {
+		height: 800px !important;
+	}
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-context, #jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post .jp-relatedposts-post-date p {
+	display: none;
+}
+
+@media (max-width: 767px) and (min-width: 0px) {
+	#jp-relatedposts {
+		padding-left: 30px;
+	}
+}
+
+.wp-caption {
+	border: 1px solid #ddd;
+	text-align: center;
+	background-color: #28292e;
+	color: #ffffff;
+	margin: 10px;
+	font-style: italic;
+	font-size: 13px;
+}
+
+.page-id-11124 iframe {
+}
