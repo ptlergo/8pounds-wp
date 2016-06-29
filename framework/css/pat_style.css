@@ -1,14 +1,19 @@
 /*
   styling by Patrick Funom
 */
-.oi_single_post_conent iframe {
-	max-height: 100% !important;
+
+.oi_posts_holder{
+  width: 70%;
 }
 
-@media only screen and (min-width: 900px) {
+/*@media only screen and (min-width: 900px) {
 	.wrapfixed {
 		position: static !important;
 	}
+
+  .oi_single_post_conent iframe {
+  	max-height: 100% !important;
+  }
 
 	.single-format-image .oi_single_post_title img {
 		float: left;
@@ -51,4 +56,4 @@
 }
 
 .page-id-11124 iframe {
-}
+}*/

@@ -78,7 +78,7 @@ if (!isset($args['global_variable']) || $args['global_variable'] !== false ) {
 	$args['intro_text'] = __('<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', "orangeidea");
 }
 
-$sections = array();              
+$sections = array();
 
 //Background Patterns Reader
 $sample_patterns_path = ReduxFramework::$_dir . '../sample/patterns/';
@@ -107,7 +107,7 @@ $sl_port_style = array ( "Random Thumbnails" => "Random Thumbnails", "Standard T
 $sample_patterns = array();
 
 if ( is_dir( $sample_patterns_path ) ) :
-	
+
   if ( $sample_patterns_dir = opendir( $sample_patterns_path ) ) :
   	$sample_patterns = array();
 
@@ -130,15 +130,15 @@ endif;
 		$bg_images_url = get_template_directory_uri() . '/framework/images/bg/'; // change this to where you store your bg images
 
 		$ct_theme_patterns = array();
-		
+
 		if ( is_dir($bg_images_path) ) {
-		    if ($bg_images_dir = opendir($bg_images_path) ) { 
+		    if ($bg_images_dir = opendir($bg_images_path) ) {
 		        while ( ($bg_images_file = readdir($bg_images_dir)) !== false ) {
 		            if(stristr($bg_images_file, ".png") !== false || stristr($bg_images_file, ".jpg") !== false) {
 		            	natsort($ct_theme_patterns); //Sorts the array into a natural order
 		                $ct_theme_patterns[] = $bg_images_url . $bg_images_file;
 		            }
-		        }    
+		        }
 		    }
 		}
 
@@ -161,38 +161,38 @@ $sections[] = array(
 
 			array(
 				'id'=>'oi_header_favicon',
-				'type' => 'media', 
+				'type' => 'media',
 				'url'=> true,
 				'title' => __('Favicon Upload', "orangeidea"),
 				'desc'=> __('Upload your favicon the url', "orangeidea"),
 				'subtitle' => __('Upload image using the native media uploader, or define the URL directly', "orangeidea"),
 				'default'=>array('url'=> $theme_path_images . 'favicon.ico' ),
 			),
-			
-			
+
+
 			array(
 			'id'=>'oi_logo_upload',
-			'type' => 'media', 
+			'type' => 'media',
 			'url'=> true,
 			'title' => __('Logo Upload', "orangeidea"),
 			'desc'=> __('Upload your logo or paste the url', "orangeidea"),
 			'subtitle' => __('Upload image using the native media uploader, or define the URL directly', "orangeidea"),
 			'default'=>array('url'=> $theme_path_images . 'mr-blogger.png' ),
 			),
-			
-			
+
+
 			array(
 				'id'       => 'top_slider_area',
-				'type'     => 'switch', 
+				'type'     => 'switch',
 				'title'    => __('Switch on sliders area?', 'orangeidea'),
 				'default'  => false,
 				'on' => 'Enabled',
 				'off' => 'Disabled',
 			),
-			
+
 			array(
 				'id'       => 'sticky_sb',
-				'type'     => 'switch', 
+				'type'     => 'switch',
 				'title'    => __('Enable Sticky sidebars?', 'orangeidea'),
 				'default'  => false,
 				'on' => 'Enabled',
@@ -200,144 +200,103 @@ $sections[] = array(
 			),
 			array(
 				'id'       => 'css_animation',
-				'type'     => 'switch', 
+				'type'     => 'switch',
 				'title'    => __('Enable CSS animation?', 'orangeidea'),
 				'default'  => false,
 				'on' => 'Enabled',
 				'off' => 'Disabled',
 			),
-			
-			
-			
+
+
+
 			array(
 				'id'       => 'oi_accent_color',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Main accent color', 'orangeidea'), 
+				'title'    => __('Main accent color', 'orangeidea'),
 				'subtitle' => __('Pick a color for the theme (default: #ff0000).', 'orangeidea'),
 				'default'  => '#ff0000',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_logo_area_bg',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Logo area background color', 'orangeidea'), 
+				'title'    => __('Logo area background color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #ffffff).', 'orangeidea'),
 				'default'  => '#ffffff',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_logo_area_tagline',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Tagline color (text after logo)', 'orangeidea'), 
+				'title'    => __('Tagline color (text after logo)', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #444444).', 'orangeidea'),
 				'default'  => '#444444',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_menu_area_bg',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Menu background color', 'orangeidea'), 
+				'title'    => __('Menu background color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #f1f1f1).', 'orangeidea'),
 				'default'  => '#f1f1f1',
 				'validate' => 'color',
 			),
-			
-			
+
+
 			array(
 				'id'       => 'oi_menu_area_border',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Menu items border', 'orangeidea'), 
+				'title'    => __('Menu items border', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #fff).', 'orangeidea'),
 				'default'  => '#fff',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_menu_area_color',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Menu items color', 'orangeidea'), 
+				'title'    => __('Menu items color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #000).', 'orangeidea'),
 				'default'  => '#000',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_after_logo_search_bg',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Search area background', 'orangeidea'), 
+				'title'    => __('Search area background', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #f3f3f3).', 'orangeidea'),
 				'default'  => '#f3f3f3',
 				'validate' => 'color',
 			),
-			
-			
-			
-			array(
-				'id'       => 'oi_categories_place_bg',
-				'type'     => 'color',
-				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories background', 'orangeidea'), 
-				'subtitle' => __('Pick a color (default: #212227).', 'orangeidea'),
-				'default'  => '#212227',
-				'validate' => 'color',
-			),
-			
-			array(
-				'id'       => 'oi_categories_place_border',
-				'type'     => 'color',
-				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories right border color', 'orangeidea'), 
-				'subtitle' => __('Pick a color (default: #191919).', 'orangeidea'),
-				'default'  => '#191919',
-				'validate' => 'color',
-			),
-			
-			array(
-				'id'       => 'oi_categories_place_color',
-				'type'     => 'color',
-				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories title color', 'orangeidea'), 
-				'subtitle' => __('Pick a color (default: #fff).', 'orangeidea'),
-				'default'  => '#fff',
-				'validate' => 'color',
-			),
-			
-			array(
-				'id'       => 'oi_categories_place_color_border',
-				'type'     => 'color',
-				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories title border-bottom color', 'orangeidea'), 
-				'subtitle' => __('Pick a color (default: #111).', 'orangeidea'),
-				'default'  => '#111',
-				'validate' => 'color',
-			),
+
 			
 			array(
 				'id'       => 'oi_categories_list_border',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories list border-top color', 'orangeidea'), 
+				'title'    => __('Categories list border-top color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #333).', 'orangeidea'),
 				'default'  => '#333',
 				'validate' => 'color',
 			),
-			
-			
+
+
 			array(
 				'id'       => 'oi_categories_list_color',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories list text color', 'orangeidea'), 
+				'title'    => __('Categories list text color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #aaa).', 'orangeidea'),
 				'default'  => '#aaa',
 				'validate' => 'color',
@@ -346,7 +305,7 @@ $sections[] = array(
 				'id'       => 'oi_categories_list_color_hover',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Categories list text color on hover', 'orangeidea'), 
+				'title'    => __('Categories list text color on hover', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #fff).', 'orangeidea'),
 				'default'  => '#fff',
 				'validate' => 'color',
@@ -355,27 +314,27 @@ $sections[] = array(
 				'id'       => 'oi_rigth_menu_place_bg',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Right side area background color', 'orangeidea'), 
+				'title'    => __('Right side area background color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #28292e).', 'orangeidea'),
 				'default'  => '#28292e',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_rigth_menu_place_border',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Right side area border color', 'orangeidea'), 
+				'title'    => __('Right side area border color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #333).', 'orangeidea'),
 				'default'  => '#333',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_rigth_menu_place_color',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Right side area text color', 'orangeidea'), 
+				'title'    => __('Right side area text color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #fff).', 'orangeidea'),
 				'default'  => '#fff',
 				'validate' => 'color',
@@ -384,38 +343,38 @@ $sections[] = array(
 				'id'       => 'oi_rigth_menu_place_top_bg',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Right side  login/register area background', 'orangeidea'), 
+				'title'    => __('Right side  login/register area background', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #212227).', 'orangeidea'),
 				'default'  => '#212227',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_log_reg_color',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Login/Register text color', 'orangeidea'), 
+				'title'    => __('Login/Register text color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #aaa).', 'orangeidea'),
 				'default'  => '#aaa',
 				'validate' => 'color',
 			),
-			
+
 			array(
 				'id'       => 'oi_log_reg_border_sep',
 				'type'     => 'color',
 				'compiler' => true, // Use if you want to hook in your own CSS compiler
-				'title'    => __('Login/Register seporator color', 'orangeidea'), 
+				'title'    => __('Login/Register seporator color', 'orangeidea'),
 				'subtitle' => __('Pick a color (default: #111).', 'orangeidea'),
 				'default'  => '#111',
 				'validate' => 'color',
 			),
-			
-			
-			
-			
+
+
+
+
 			array(
                'id'               => 'oi_typo_headers',
-               'type'               => 'typography', 
+               'type'               => 'typography',
                'title'               => __('Titles Font', 'orangeidea'),
                'compiler'          => true, // Use if you want to hook in your own CSS compiler
                'google'          => true, // Disable google fonts. Won't work if you haven't defined your google api key
@@ -434,11 +393,11 @@ $sections[] = array(
                                              'google'          => true,
                                              ),
                ),
-			   
+
 			   		   array(
 				'id'               => 'top_right',
 				'type'             => 'editor',
-				'title'            => __('Textarea after authorization (i use mailchimp plugin for newslatter susbscribe)', 'orangeidea'), 
+				'title'            => __('Textarea after authorization (i use mailchimp plugin for newslatter susbscribe)', 'orangeidea'),
 				'default'          => 'In demo site i use MailChimp plugin and shortcode -mc4wp_form-, but you can put here anything you want',
 				'args'   => array(
 					'teeny'            => true,
@@ -446,8 +405,8 @@ $sections[] = array(
 				)
 			),
 
-			   
-				
+
+
 					array(
 							'id'       => 'footer_social_tw',
 							'type'     => 'text',
@@ -489,20 +448,20 @@ $sections[] = array(
 							'type'     => 'text',
 							'title'    => __('YouTube url', 'orangeidea'),
 							'default'  => '#'
-						),		  
+						),
 
 					   array(
 				'id'               => 'footer_left',
 				'type'             => 'editor',
-				'title'            => __('Textarea for footer rigth side', 'orangeidea'), 
+				'title'            => __('Textarea for footer rigth side', 'orangeidea'),
 				'default'          => 'Copyright 2014 Mister Blogger - Company. Design by OrangeIdea',
 				'args'   => array(
 					'teeny'            => true,
 					'textarea_rows'    => 10
 				)
 			),
-		
-		
+
+
 		),
 	);
 

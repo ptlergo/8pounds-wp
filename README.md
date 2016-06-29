@@ -7,13 +7,16 @@
 - transfer current styling
 - update homepage styling
 - update post page styling
-- remove social media from header (x)
-- remove social media from post formats (x)
+- even sidebar and main page 70% to 30%
+- flip post feature image side from right to left
+- organize category sections to fit new format
 - header section 3 to 2
 - header uniform color
+- remove category section in header (x)
+- remove social media from header (x)
+- remove social media from post formats (x)
 - remove perm. header plugin. use something native
 - remove small side bar that appears in center (x)
-- even sidebar and main page 70% to 30%
 
 #features new
 - upvote
