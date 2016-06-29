@@ -15,6 +15,7 @@
 - move search bar to above side bar
 - header uniform color(x)
 - remove category section in header (x)
+- remove category section in mobile header (x)
 - remove social media from header (x)
 - remove social media from post formats (x)
 - remove perm. header plugin. use something native

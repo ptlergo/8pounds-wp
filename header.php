@@ -15,29 +15,7 @@
 </head>
 <body  <?php body_class(); ?>>
 <div class="oi_head_holder">
-	<div class="oi_smalldev_holder hidden-lg">
-		<?php
-		//list terms in a given taxonomy using wp_list_categories (also useful as a widget if using a PHP Code plugin)
 
-		$orderby      = 'name';
-		$show_count   = 0;      // 1 for yes, 0 for no
-		$pad_counts   = 0;      // 1 for yes, 0 for no
-		$hierarchical = 1;      // 1 for yes, 0 for no
-		$title        = '';
-
-		$args = array(
-		  'orderby'      => $orderby,
-		  'show_count'   => $show_count,
-		  'pad_counts'   => $pad_counts,
-		  'hierarchical' => $hierarchical,
-		  'title_li'     => $title
-		);
-		?>
-		<div class="visible-xs oi_show_mobile_menu"><?php _e('Categories', "orangeidea"); ?><span class="fa fa-bars"></span></div>
-        <ul  class="oi_smalldev_categories_list">
-        <?php wp_list_categories( $args ); ?>
-        </ul>
-    </div>
     <div class="clearfix hidden-lg"></div>
 	<div class="oi_logo_place">
     	<div class="oi_logo">
@@ -82,7 +60,7 @@
             -->
         </div>
     </div>
-    
+
     <div class="oi_rigth_menu_place">
     	<div class="oi_rigth_menu_place_top">
 			<?php if (!$user_ID) {?>
