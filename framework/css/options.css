@@ -1,0 +1,93 @@
+
+/* 
+*	=================================================================================================================================================
+*	GENERATED CSS FILE
+*	=================================================================================================================================================
+*/
+
+
+
+h1, h2, h3, h4, h5, h6:not(.oi_blog_legend_descr) {
+	font-family: 'Open Sans' !important;
+	
+}
+
+
+.colored { color:#ff0000}
+.oi_after_logo .header_menu > li > a:hover { background:#ff0000;}
+.oi_after_logo .header_menu > li.current-menu-item > a { background:#ff0000; }
+.oi_after_logo .header_menu > li.current-menu-parent > a { background:#ff0000; }
+.oi_after_logo .header_menu > li > .my_drop > ul >li >a:hover {background:#ff0000;}
+.oi_after_logo .header_menu > li > .my_drop > ul >li.current_page_item a { background:#ff0000;}
+.oi_smalldev_categories_list > li >a:hover { background:#ff0000; }
+.oi_smalldev_categories_list > li.current-cat >a { background:#ff0000;}
+.oi_rigth_menu_place_top_member_area .oi_form_submit {background:#ff0000; }
+.oi_rigth_menu_place_bottom input[type="submit"]:hover { background:#ff0000;}
+.oi_after_logo_btn_holder a.btn { background:#ff0000;}
+.oi_post_sticky_meta_smalldev h3 a:hover { color:#ff0000; }
+.oi_blog_post_date {color:#ff0000;}
+.oi_blog_post_title a:hover { color:#ff0000;}
+.oi_pg .page-numbers:hover { background:#ff0000;}
+.page-numbers.current { background:#ff0000;}
+.oi_archive_posts_counts {background:#ff0000;}
+#wp-calendar a { color:#ff0000}
+#wp-calendar td#prev a:hover { color:#ff0000;}
+.oi_post_content h6 {color:#ff0000;}
+.oi_post_content_content a:hover { color:#ff0000;}
+.oi_single_post_meta .oi_views_count { color:#ff0000;}
+.fn a, .oi_commente_holder h4 a { color:#ff0000}
+.btn.oi_form_submit { background:#ff0000;}
+.oi_page_post_slider_inner_content_title a:hover { color:#ff0000;}
+.oi_page_title_url:hover { color:#ff0000; }
+.oi_smalldev_categories_list > li >ul> li> a:hover { color:#ff0000;}
+.oi_head_holder .fa:hover { color:#ff0000;}
+#wp-calendar caption { color:#ff0000;}
+.tagcloud a:hover { color:#ff0000;}
+.oi_tweet a:hover { color:#ff0000;}
+.oi_tweet_time > a.twitter_time {color:#ff0000; }
+.oi_ticket_commentlist .comment-author  .fn{ color:#ff0000; }
+.oi_ticket_commentlist .comment-body .reply .comment-reply-link { color:#ff0000;}
+.oi_ticket_commentlist > li > .comment-body .reply .comment-reply-link { color:#ff0000; }
+
+
+
+
+
+.oi_post_sticky_meta {
+	background:rgba(255,0,0,0.8);
+}
+.oi_popular_widget_views { background:rgba(255,0,0,0.8);}
+
+.oi_tringle {border-left: 30px solid rgba(255,0,0,0.8);}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .header_menu > li > .my_drop >ul >li >a:hover { color:#ff0000 !important;}
+    .header_menu > li > .my_drop >ul >li.current-menu-item >a { color:#ff0000 !important;}
+}
+
+.oi_logo_place { background:#ffffff}
+.oi_logo_inner_description {color:#444444} 
+.oi_after_logo, .oi_after_logo .header_menu > li > .my_drop > ul >li >a{ background:#f1f1f1}
+.header_menu > li > .my_drop > ul >li >a, .oi_after_logo .header_menu > li:first-child > a, .oi_after_logo .header_menu > li > .my_drop > ul > li {border-color: #fff;}
+.oi_after_logo .header_menu > li > a, .oi_after_logo .header_menu > li > .my_drop > ul >li >a {color:#000}
+.oi_after_logo_search {background: #f3f3f3}
+
+.oi_categories_place {background: #212227; border-color:#191919;}
+.oi_categories_place h6 {color: #fff; border-color:  #111}
+.oi_categories_list {border-color:#333}
+.oi_categories_list > li > a, .oi_categories_list > li > ul > li > a {color: #aaa;}
+.oi_categories_list > li > a:hover, .oi_categories_list > li > ul > li > a:hover {color: #fff;}
+
+.oi_rigth_menu_place {background-color: #28292e; border-color:#333;}
+.oi_rigth_menu_place_bottom {color: #fff; border-color:#333}
+.oi_rigth_menu_place_top {background:#212227 }
+.oi_rigth_menu_place_top a {color: #aaa} 
+.oi_rigth_menu_place_top a.oi_login { border-color:#111}
+
+
+
+
+
+
+
+
