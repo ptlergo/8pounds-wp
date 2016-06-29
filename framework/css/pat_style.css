@@ -2,6 +2,7 @@
   styling by Patrick Funom
 */
 
+/*DESKTOP*/
 @media only screen and (min-width: 900px) {
   .oi_posts_holder, .oi_logo_place{
     width: 70%;
@@ -13,6 +14,14 @@
   }
 }
 
+/*MOBILE*/
+@media (max-width: 767px) and (min-width: 0px) {
+  /*sticky nav*/
+  .oi_logo_place{
+    position: fixed;
+    top: 0;
+  }
+}
 
 /*@media only screen and (min-width: 900px) {
 	.wrapfixed {
