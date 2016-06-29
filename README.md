@@ -13,7 +13,7 @@
 - flip post feature image side from right to left
 - organize category sections to fit new format
 - move search bar to above side bar
-- header uniform color
+- header uniform color(x)
 - remove category section in header (x)
 - remove social media from header (x)
 - remove social media from post formats (x)
