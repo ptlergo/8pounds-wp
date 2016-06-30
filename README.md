@@ -9,7 +9,7 @@
 - fix mobile menu icon(x)
 - fix logo container(x)
 - fix mobile logo container
-- fix mobile post feature images
+- fix mobile post feature images(x)
 - update homepage styling with content box shadows (x)
 - update post page styling
 - update post format naming conventions
