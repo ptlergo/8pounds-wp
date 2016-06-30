@@ -29,6 +29,12 @@
     box-shadow: 0px 1px 3px #b8b8b8;
   }
 
+  .oi_post_tringle{
+    left: inherit;
+    right: -1px;
+    transform: rotate(180deg);
+  }
+
   /*side bar sticky*/
   .admin-bar .oi_big_sidebar_bottom.oi_need_absolute_index{
     box-shadow: 0px 1px 3px #b8b8b8;

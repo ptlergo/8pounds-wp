@@ -12,6 +12,7 @@
 - fix mobile post feature images
 - update homepage styling with content box shadows (x)
 - update post page styling
+- update post format naming conventions
 - flip post feature image side from right to left (x)
 - organize category sections to fit new format
 - move search bar to above side bar
@@ -30,6 +31,7 @@
 #features new
 - upvote
 - section icons
+-  section specific colors
 - autor detail
 - latest post icons in mobile view
 - instagram feed
