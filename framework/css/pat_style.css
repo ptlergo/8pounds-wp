@@ -8,6 +8,12 @@
     width: 70%;
   }
 
+  /*individual latest posts*/
+  .oi_post{
+    margin: 5px;
+    box-shadow: 0px 1px 3px #d3d3d3;
+  }
+
   /*logo container*/
   .oi_logo_inner_holder img{
     width: 30%;
@@ -20,6 +26,11 @@
   /*HEADER RESTYLING*/
   .oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder{
     height: 170px;
+  }
+
+  /*side bar sticky*/
+  .admin-bar .oi_big_sidebar_bottom.oi_need_absolute_index{
+    padding: 10px;
   }
 }
 

@@ -1,9 +1,9 @@
-<?php 
+<?php
 $layout = get_post_meta($post->ID, 'posts_layout', 1);
 if ($layout == 'Wide'){
-		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-wide'); 
+		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-wide');
 	}else{
-		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-squre'); 
+		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-squre');
 	}
 $title = get_the_title();
 global $oi_options;
@@ -13,18 +13,22 @@ global $oi_options;
 $catt = get_the_terms( $post->ID, 'category' );
 if (isset($catt) && ($catt!='')){
 	$slugg = '';
-	$slug = ''; 
+	$slug = '';
 	foreach($catt  as $vallue=>$key){
 		$slugg .= strtolower($key->slug) . " ";
 		$slug  .= ''.$key->name.', ';
 	}
-	
+
 };
 
 
 ?>
 
 <div class="clearfix"></div>
+<div class="oi_post_meta_data_holder">
+	<a class="oi_image_link" href="<?php echo the_permalink(); ?>"><img class="img-responsive" src="<?php echo $large_image_url[0]; ?>" /></a>
+    <div class="oi_post_tringle"></div>
+</div>
 <div class="oi_blog_post_meta">
     <div class="oi_blog_post_date">
         <div class="oi_date_d colored"><?php the_time('d F') ?> <span class="oi_year"><?php the_time('Y') ?></span></div>
@@ -37,11 +41,8 @@ if (isset($catt) && ($catt!='')){
     	<?php echo get_post_meta($post->ID, 'post-descr', true); ?>
     </div>
 </div>
-<div class="oi_post_meta_data_holder">
-	<a class="oi_image_link" href="<?php echo the_permalink(); ?>"><img class="img-responsive" src="<?php echo $large_image_url[0]; ?>" /></a>
-    <div class="oi_post_tringle"></div>
-</div>
 <div class="clearfix"></div>
+
 
 
 

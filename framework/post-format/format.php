@@ -1,5 +1,5 @@
-<?php 
-$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-squre'); 
+<?php
+$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-squre');
 $title = get_the_title();
 global $oi_options;
 ?>
@@ -8,12 +8,12 @@ global $oi_options;
 $catt = get_the_terms( $post->ID, 'category' );
 if (isset($catt) && ($catt!='')){
 	$slugg = '';
-	$slug = ''; 
+	$slug = '';
 	foreach($catt  as $vallue=>$key){
 		$slugg .= strtolower($key->slug) . " ";
 		$slug  .= ''.$key->name.', ';
 	}
-	
+
 };
 
 
@@ -47,6 +47,3 @@ if (isset($catt) && ($catt!='')){
 </div>
 <?php };?>
 <div class="clearfix"></div>
-
-
-
