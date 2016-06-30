@@ -1,4 +1,4 @@
-<?php 
+<?php
 $layout = get_post_meta($post->ID, 'posts_layout', 1);
 $title = get_the_title();
 global $oi_options;
@@ -8,12 +8,12 @@ global $oi_options;
 $catt = get_the_terms( $post->ID, 'category' );
 if (isset($catt) && ($catt!='')){
 	$slugg = '';
-	$slug = ''; 
+	$slug = '';
 	foreach($catt  as $vallue=>$key){
 		$slugg .= strtolower($key->slug) . " ";
 		$slug  .= ''.$key->name.', ';
 	}
-	
+
 };
 
 
@@ -22,6 +22,10 @@ if (isset($catt) && ($catt!='')){
 
 
 <div class="clearfix"></div>
+<div class="oi_post_meta_data_holder">
+	<?php echo get_post_meta($post->ID, '_format_audio_embed', true); ?>
+    <div class="oi_post_tringle"></div>
+</div>
 <div class="oi_blog_post_meta">
     <div class="oi_blog_post_date">
         <div class="oi_date_d colored"><?php the_time('d F') ?> <span class="oi_year"><?php the_time('Y') ?></span></div>
@@ -34,11 +38,4 @@ if (isset($catt) && ($catt!='')){
     	<?php echo get_post_meta($post->ID, 'post-descr', true); ?>
     </div>
 </div>
-<div class="oi_post_meta_data_holder">
-	<?php echo get_post_meta($post->ID, '_format_audio_embed', true); ?>
-    <div class="oi_post_tringle"></div>
-</div>
 <div class="clearfix"></div>
-
-
-
