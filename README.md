@@ -4,7 +4,6 @@
 ### mr-blogger wordpress theme
 
 #TODO
-- transfer current styling
 - fix oi_logo_place section for mobile
 - fix mobile menu icon(x)
 - fix logo container(x)
