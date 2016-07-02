@@ -20,6 +20,18 @@ if (isset($catt) && ($catt!='')){
 ?>
 
 <div class="clearfix"></div>
+
+<?php if ($large_image_url[0] !='') {?>
+<div class="oi_post_meta_data_holder">
+	<a class="oi_image_link" href="<?php echo the_permalink(); ?>"><img class="img-responsive" src="<?php echo $large_image_url[0]; ?>" alt=""/></a>
+    <div class="oi_post_tringle"></div>
+</div>
+<?php } else {?>
+<div class="oi_post_meta_data_holder">
+	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/framework/css/img/oi_format_standard.png" alt="" />
+    <div class="oi_post_tringle"></div>
+</div>
+<?php };?>
 <div class="oi_blog_post_meta">
     <div class="oi_blog_post_date">
         <div class="oi_date_d colored"><?php the_time('d F') ?> <span class="oi_year"><?php the_time('Y') ?></span></div>
@@ -35,15 +47,4 @@ if (isset($catt) && ($catt!='')){
 
     </div>
 </div>
-<?php if ($large_image_url[0] !='') {?>
-<div class="oi_post_meta_data_holder">
-	<a class="oi_image_link" href="<?php echo the_permalink(); ?>"><img class="img-responsive" src="<?php echo $large_image_url[0]; ?>" alt=""/></a>
-    <div class="oi_post_tringle"></div>
-</div>
-<?php } else {?>
-<div class="oi_post_meta_data_holder">
-	<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/framework/css/img/oi_format_standard.png" alt="" />
-    <div class="oi_post_tringle"></div>
-</div>
-<?php };?>
 <div class="clearfix"></div>

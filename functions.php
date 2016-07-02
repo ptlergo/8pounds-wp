@@ -15,7 +15,7 @@ load_theme_textdomain( 'orangeidea', get_template_directory() . '/theme-options/
 
 /**
  * Include Framework. (Theme options)
- */ 
+ */
 if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/theme-options/ReduxCore/framework.php' ) ) {
 	require_once( dirname( __FILE__ ) . '/theme-options/ReduxCore/framework.php' );
 }
@@ -44,15 +44,15 @@ function oi_remove_admin_bar() {
 /* Theme Stylesheets */
 /* ------------------------------------------------------------------------ */
 
-function oi_theme_styles_basic()  
+function oi_theme_styles_basic()
 {
 	/* Enqueue Stylesheets */
 	wp_enqueue_style( 'stylesheet', get_stylesheet_uri(), array(), '1', 'all' ); // Main Stylesheet
 	wp_enqueue_style( 'oi_bxslider_css', get_template_directory_uri() . '/framework/css/jquery.bxslider.css', array(), '1', 'all' );
 	wp_enqueue_style( 'flex-slider', get_template_directory_uri() . '/framework/FlexSlider/flexslider.css', array(), '1', 'all' );
 	wp_enqueue_style( 'oi_prettyPhoto_css', get_template_directory_uri() . '/framework/css/prettyPhoto.css', array(), '1', 'all' );
-}  
-add_action( 'wp_enqueue_scripts', 'oi_theme_styles_basic', 1 ); 
+}
+add_action( 'wp_enqueue_scripts', 'oi_theme_styles_basic', 1 );
 
 
 
@@ -68,9 +68,9 @@ if ( !function_exists( 'oi_load_scripts' ) ) {
 		wp_enqueue_script('google-maps', 'https://maps.googleapis.com/maps/api/js?sensor=false');
 		wp_enqueue_script('oi_g_map', get_template_directory_uri().'/framework/js/gmap3.min.js', false, null , true);
 		wp_enqueue_script('oi_bxslider', get_template_directory_uri().'/framework/js/jquery.bxslider.min.js', false, null , true);
-		
+
 		wp_enqueue_script('oi_prettyPhoto', get_template_directory_uri().'/framework/js/jquery.prettyPhoto.js', false, null , true);
-		
+
 		wp_enqueue_script('oi_flic', get_template_directory_uri().'/framework/js/jflickrfeed.min.js', false, null , true);
 		wp_enqueue_script('oi_waitforimages', get_template_directory_uri().'/framework/js/jquery.waitforimages.js', false, null , true);
 		wp_enqueue_script('oi_isotope', get_template_directory_uri().'/framework/js/jquery.isotope.min.js', false, null , true);
@@ -81,15 +81,15 @@ if ( !function_exists( 'oi_load_scripts' ) ) {
 		wp_enqueue_script('oi_viewportchecker', get_template_directory_uri().'/framework/js/viewportchecker.js', false, null , true);
 
 		wp_enqueue_script('oi_custom', get_template_directory_uri().'/framework/js/custom.js', false, null , true);
-		
+
 		global $oi_options;
-		$oi_theme = array( 
+		$oi_theme = array(
 				'theme_url' => get_template_directory_uri(),
 				'sticky_sidebars' => $oi_options['sticky_sb'],
 				'css_animation' => $oi_options['css_animation'],
 			);
     	wp_localize_script( 'oi_custom', 'oi_theme', $oi_theme );
-	}    
+	}
 }
 
 function add_scripts() {
@@ -102,7 +102,7 @@ add_action('wp_enqueue_scripts', 'add_scripts');
 /* Theme Menus */
 /* ------------------------------------------------------------------------ */
 
-function oi_menu() { 
+function oi_menu() {
   register_nav_menus(
     array(
       'main_menu' => 'Main Navigation',
@@ -123,7 +123,7 @@ class OI_Walker extends Walker_Nav_Menu
         $indent = str_repeat("\t", $depth);
         $output .= "$indent</ul></div>\n";
     }
-	
+
 	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 		global $wp_query;
 		$indent = ( $depth ) ? str_repeat( "\t", $depth ) : '';
@@ -146,7 +146,7 @@ class OI_Walker extends Walker_Nav_Menu
 		$item_output .= '<a'. $attributes .' data-description="' . $item->description . '">';
 		$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
 		$item_output .= '</a>';
-		
+
 		$item_output .= $args->after;
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 	}
@@ -154,10 +154,10 @@ class OI_Walker extends Walker_Nav_Menu
 
 
 /*=======================================
-	Register Sidebar UNLIMITED 
+	Register Sidebar UNLIMITED
 =======================================*/
 if ( function_exists('register_sidebar') ){
-	
+
 	register_sidebar(array(
 		'name' => 'Blog Sidebar',
         'before_widget' => '<div class="oi_widget">',
@@ -165,9 +165,9 @@ if ( function_exists('register_sidebar') ){
         'before_title' => '<h6 class="io_widget_title"><span class="colored">// </span>',
         'after_title' => '</h6>'
     ));
-	
 
-	
+
+
 	register_sidebar(array(
 		'name' => 'Big Sidebar',
         'before_widget' => '<div class="oi_widget">',
@@ -176,7 +176,7 @@ if ( function_exists('register_sidebar') ){
         'after_title' => '</h3>'
 
     ));
-	
+
 	register_sidebar(array(
 		'name' => 'Big Sidebar Bottom',
         'before_widget' => '<div class="oi_widget">',
@@ -185,7 +185,7 @@ if ( function_exists('register_sidebar') ){
         'after_title' => '</h3>'
 
     ));
-	
+
 	register_sidebar(array(
 		'name' => 'Small Sidebar',
         'before_widget' => '<div class="oi_widget">',
@@ -194,8 +194,8 @@ if ( function_exists('register_sidebar') ){
         'after_title' => '</h3>'
 
     ));
-	
-	
+
+
 	register_sidebar(array(
 		'name' => 'Page Small Sidebar',
         'before_widget' => '<div class="oi_widget">',
@@ -204,14 +204,14 @@ if ( function_exists('register_sidebar') ){
         'after_title' => '</h3>'
 
     ));
-	
-	
-	
+
+
+
 }
 
 add_filter('widget_text', 'do_shortcode');
 
-if ( function_exists( 'add_theme_support' ) ) { 
+if ( function_exists( 'add_theme_support' ) ) {
 add_theme_support( 'post-thumbnails' );
 
 // additional image sizes
@@ -228,11 +228,11 @@ add_image_size( 'post-large', 1240, 700, true );
     /* ------------------------------------------------------------------------ */
 	/* Automatic Plugin Activation */
 	require_once('framework/plugin-activation.php');
-	
+
 	add_action('tgmpa_register', 'goodchoice_register_required_plugins');
 	function goodchoice_register_required_plugins() {
 		$plugins = array(
-			
+
 			array(
 				'name'     				=> 'Visual Composer', // The plugin name
 				'slug'     				=> 'js_composer', // The plugin slug (typically the folder name)
@@ -253,7 +253,7 @@ add_image_size( 'post-large', 1240, 700, true );
 				'force_deactivation' 	=> true, // If true, plugin is deactivated upon theme switch, useful for theme-specific plugins
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 			),
-			
+
 			array(
 				'name'     				=> 'CF-Post-Formats', // The plugin name
 				'slug'     				=> 'cf-post-formats', // The plugin slug (typically the folder name)
@@ -265,10 +265,10 @@ add_image_size( 'post-large', 1240, 700, true );
 				'external_url' 			=> '', // If set, overrides default API URL and points to an external URL
 			),
 		);
-	
+
 		// Change this to your theme text domain, used for internationalising strings
 		$theme_text_domain = 'goodchoice-framework';
-	
+
 		/**
 		 * Array of configuration settings. Amend each line as needed.
 		 * If you want the default strings to be available under your own theme domain,
@@ -306,11 +306,11 @@ add_image_size( 'post-large', 1240, 700, true );
 				'nag_type'									=> 'updated' // Determines admin notice type - can only be 'updated' or 'error'
 			)
 		);
-	
+
 		tgmpa($plugins, $config);
-		
+
 	}
-	
+
 
 
 /* ------------------------------------------------------------------------ */
@@ -345,19 +345,19 @@ if ( !function_exists( 'ct_curl_subscribers_text_counter' ) ) {
 /* Youtube counter
 /*-----------------------------------------------------------------------------------*/
 if ( !function_exists( 'ct_yt_count' ) ) {
-     function ct_yt_count( $username ) { 
+     function ct_yt_count( $username ) {
           try {
-               @$xmlData = @ct_curl_subscribers_text_counter('http://gdata.youtube.com/feeds/api/users/' . strtolower($username)); 
-               @$xmlData = str_replace('yt:', 'yt', $xmlData); 
-               @$xml = new SimpleXMLElement($xmlData); 
+               @$xmlData = @ct_curl_subscribers_text_counter('http://gdata.youtube.com/feeds/api/users/' . strtolower($username));
+               @$xmlData = str_replace('yt:', 'yt', $xmlData);
+               @$xml = new SimpleXMLElement($xmlData);
                @$ytCount['yt_count'] = ( string ) $xml->ytstatistics['subscriberCount'];
                @$ytCount['page_url'] = "http://www.youtube.com/user/".$username;
           } catch (Exception $e) {
                $ytCount['yt_count'] = 0;
                $ytCount['page_url'] = "http://www.youtube.com";
           }
-          return($ytCount); 
-     } 
+          return($ytCount);
+     }
 }
 
 function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oauth_token_secret) {
@@ -365,26 +365,26 @@ function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oa
 										 return $connection;
 									   }
 									   function convert_links($status,$targetBlank=true,$linkMaxLen=250){
-									   
+
 									   // the target
 										$target=$targetBlank ? " target=\"_blank\" " : "";
-										
+
 									   // convert link to url
 										$status = preg_replace("/((http:\/\/|https:\/\/)[^ )
 								]+)/e", "'<a href=\"$1\" title=\"$1\" $target >'. ((strlen('$1')>=$linkMaxLen ? substr('$1',0,$linkMaxLen).'...':'$1')).'</a>'", $status);
-										
+
 									   // convert @ to follow
 										$status = preg_replace("/(@([_a-z0-9\-]+))/i","<a href=\"http://twitter.com/$2\" title=\"Follow $2\" $target >$1</a>",$status);
-										
+
 									   // convert # to search
 										$status = preg_replace("/(#([_a-z0-9\-]+))/i","<a href=\"https://twitter.com/search?q=$2\" title=\"Search $1\" $target >$1</a>",$status);
-										
+
 									   // return the status
 										return $status;
 									  }
 									  function relative_time($a) {
 									   //get current timestampt
-									   $b = strtotime("now"); 
+									   $b = strtotime("now");
 									   //get timestamp when tweet created
 									   $c = strtotime($a);
 									   //get difference
@@ -394,7 +394,7 @@ function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oa
 									   $hour = $minute * 60;
 									   $day = $hour * 24;
 									   $week = $day * 7;
-										
+
 									   if(is_numeric($d) && $d > 0) {
 										//if less then 3 seconds
 										if($d < 3) return "right now";
@@ -415,7 +415,7 @@ function getConnectionWithAccessToken($cons_key, $cons_secret, $oauth_token, $oa
 										//else return more than a year
 										return "over a year ago";
 									   }
-									  } 
+									  }
 /*-----------------------------------------------------------------------------------*/
 /* Twitter counter
 /*-----------------------------------------------------------------------------------*/
@@ -439,10 +439,10 @@ if ( !function_exists( 'ct_twitter_count' ) ) {
 /* ------------------------------------------------------------------------ */
 
 add_theme_support( 'post-formats',      // post formats
-		array( 
+		array(
 			'image',    //image
 			'quote',   // a quick quote
-			'video',   // video 
+			'video',   // video
 			'audio',   // audio
 			'gallery',   // audio
 		)
@@ -513,12 +513,12 @@ function extra_fields_for_portfolio( $post ){
     <option <?php if ($val == get_post_meta($post->ID, 'oi_th', 1)) { echo 'selected';} ?> value="<?php echo $val ?>"><?php echo $val ?></option>
 	<?php } ?>
     </select>
-    
+
     <h4>Hover BG color</h4>
     <input type="text" name="extra[port-bg]" value="<?php echo get_post_meta($post->ID, 'port-bg', true); ?>" />
     <h4>Hover TEXT color</h4>
     <input type="text" name="extra[port-text-color]" value="<?php echo get_post_meta($post->ID, 'port-text-color', true); ?>" />
-    
+
     <h4>You can upload up to 5 additional images (Optional. For slider)</h4>
     <div>
     <p>
@@ -526,14 +526,14 @@ function extra_fields_for_portfolio( $post ){
 		<input id="upload_image" type="text" style="width:70%;" name="extra[image]" value="<?php echo get_post_meta($post->ID, 'image', true); ?>" />
 		<input class="upload_image_button" type="button" value="Upload" /><br/>
 
-	</p>	
+	</p>
 	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
 	<p>
 		<label for="upload_image">Image 2: </label>
 		<input id="upload_image" type="text" style="width:70%;" name="extra[image2]" value="<?php echo get_post_meta($post->ID, 'image2', true); ?>" />
 		<input class="upload_image_button" type="button" value="Upload" /><br/>
 
-	</p>	
+	</p>
 	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
 
 	<p>
@@ -563,7 +563,7 @@ function extra_fields_for_portfolio( $post ){
 //Extra Field for Blog
 function extra_fields_for_blog( $post ){
 	?>
-    
+
 <h4>Show post as fetured?</h4>
  <select name="extra[oi_featured]">
     <?php $oi_featured_array = array(
@@ -586,14 +586,14 @@ function extra_fields_for_blog( $post ){
 		<input id="upload_image" type="text" style="width:70%;" name="extra[image]" value="<?php echo get_post_meta($post->ID, 'image', true); ?>" />
 		<input class="upload_image_button" type="button" value="Upload" /><br/>
 
-	</p>	
+	</p>
 	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
 	<p>
 		<label for="upload_image">Image 2: </label>
 		<input id="upload_image" type="text" style="width:70%;" name="extra[image2]" value="<?php echo get_post_meta($post->ID, 'image2', true); ?>" />
 		<input class="upload_image_button" type="button" value="Upload" /><br/>
 
-	</p>	
+	</p>
 	<input type="hidden" name="extra_fields_nonce" value="<?php echo wp_create_nonce(__FILE__); ?>" />
 
 	<p>
@@ -625,12 +625,12 @@ add_action('save_post', 'extra_fields_update', 0);
 
 
 function extra_fields_update( $post_id ){
-	
-	if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return false; 
-	if ( !current_user_can('edit_post', $post_id) ) return false; 
-	if( !isset($_POST['extra']) ) return false;	
 
-	
+	if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE  ) return false;
+	if ( !current_user_can('edit_post', $post_id) ) return false;
+	if( !isset($_POST['extra']) ) return false;
+
+
 	$_POST['extra'] = array_map('trim', $_POST['extra']);
 	foreach( $_POST['extra'] as $key=>$value ){
 		if( empty($value) )	delete_post_meta($post_id, $key);
@@ -652,7 +652,7 @@ function upload_scripts() {
 function upload_styles() {
 	wp_enqueue_style('thickbox');
 }
-add_action('admin_enqueue_scripts', 'upload_scripts'); 
+add_action('admin_enqueue_scripts', 'upload_scripts');
 add_action('admin_enqueue_scripts', 'upload_styles');
 
 
@@ -695,25 +695,25 @@ function wp_corenavi() {
   $max = $wp_query->max_num_pages;
   $a = array();
   if (!$current = get_query_var('paged')) $current = 1;
-  
+
   if( !empty($wp_query->query_vars['s']) ) {
 	   $a['add_args'] = array( 's' => str_replace(" ","+",get_query_var('s')), 'post_type' => get_query_var('post_type'));
   }
-  
+
   if($wp_rewrite->using_permalinks()){
 	$a['base'] = ''. add_query_arg('paged','%#%?#posts_holder');
   }else{
   	$a['base'] = add_query_arg('paged','%#%?#posts_holder');
   }
-  
+
   $a['total'] = $max;
   $a['current'] = $current;
 
-  $total = 1; 
-  $a['mid_size'] = '3'; 
-  $a['end_size'] = '1'; 
-  $a['prev_text'] = 'Back'; 
-  $a['next_text'] = 'Next'; 
+  $total = 1;
+  $a['mid_size'] = '3';
+  $a['end_size'] = '1';
+  $a['prev_text'] = 'Back';
+  $a['next_text'] = 'Next';
   $a['total'] = $wp_query->max_num_pages;
 
   echo  paginate_links($a);
@@ -734,7 +734,7 @@ function oi_breadcrumbs(){
     $text['tag']      = __( 'Posts Tagged "%s"', 'orangeidea' ); // text for a tag page
     $text['author']   = __( 'Articles Posted by %s', 'orangeidea' ); // text for an author page
     $text['404']      = __( 'Error 404', 'orangeidea' ); // text for the 404 page
- 
+
     $show_current   = 1; // 1 - show current post/page/category title in breadcrumbs, 0 - don't show
     $show_on_home   = 0; // 1 - show breadcrumbs on the homepage, 0 - don't show
     $show_home_link = 1; // 1 - show the 'Home' link, 0 - don't show
@@ -743,7 +743,7 @@ function oi_breadcrumbs(){
     $before         = '<span class="current">'; // tag before the current crumb
     $after          = '</span>'; // tag after the current crumb
     /* === END OF OPTIONS === */
- 
+
     global $post;
     $home_link    = home_url('/');
     $link_before  = '<span typeof="v:Breadcrumb">';
@@ -752,19 +752,19 @@ function oi_breadcrumbs(){
     $link         = $link_before . '<a class="colored" ' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
     $parent_id    = $parent_id_2 = $post->post_parent;
     $frontpage_id = get_option('page_on_front');
- 
+
     if (is_home() || is_front_page()) {
- 
+
         if ($show_on_home == 1) echo '<div class="breadcrumbs"><a class="colored" href="' . $home_link . '">' . $text['home'] . '</a></div>';
- 
+
     } else {
- 
+
         echo '<div class="breadcrumbs">';
         if ($show_home_link == 1) {
             echo '<a class="colored" href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a>';
             if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
         }
- 
+
         if ( is_category() ) {
             $this_cat = get_category(get_query_var('cat'), false);
             if ($this_cat->parent != 0) {
@@ -776,22 +776,22 @@ function oi_breadcrumbs(){
                 echo $cats;
             }
             if ($show_current == 1) echo $before . sprintf($text['category'], single_cat_title('', false)) . $after;
- 
+
         } elseif ( is_search() ) {
             echo $before . sprintf($text['search'], get_search_query()) . $after;
- 
+
         } elseif ( is_day() ) {
             echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
             echo sprintf($link, get_month_link(get_the_time('Y'),get_the_time('m')), get_the_time('F')) . $delimiter;
             echo $before . get_the_time('d') . $after;
- 
+
         } elseif ( is_month() ) {
             echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
             echo $before . get_the_time('F') . $after;
- 
+
         } elseif ( is_year() ) {
             echo $before . get_the_time('Y') . $after;
- 
+
         } elseif ( is_single() && !is_attachment() ) {
             if ( get_post_type() != 'post' ) {
                 $post_type = get_post_type_object(get_post_type());
@@ -808,11 +808,11 @@ function oi_breadcrumbs(){
                 echo $cats;
                 if ($show_current == 1) echo $before . get_the_title() . $after;
             }
- 
+
         } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
             $post_type = get_post_type_object(get_post_type());
             echo $before . $post_type->labels->singular_name . $after;
- 
+
         } elseif ( is_attachment() ) {
             $parent = get_post($parent_id);
             $cat = get_the_category($parent->ID); $cat = $cat[0];
@@ -825,10 +825,10 @@ function oi_breadcrumbs(){
             }
             printf($link, get_permalink($parent), $parent->post_title);
             if ($show_current == 1) echo $delimiter . $before . get_the_title() . $after;
- 
+
         } elseif ( is_page() && !$parent_id ) {
             if ($show_current == 1) echo $before . get_the_title() . $after;
- 
+
         } elseif ( is_page() && $parent_id ) {
             if ($parent_id != $frontpage_id) {
                 $breadcrumbs = array();
@@ -849,30 +849,30 @@ function oi_breadcrumbs(){
                 if ($show_home_link == 1 || ($parent_id_2 != 0 && $parent_id_2 != $frontpage_id)) echo $delimiter;
                 echo $before . get_the_title() . $after;
             }
- 
+
         } elseif ( is_tag() ) {
             echo $before . sprintf($text['tag'], single_tag_title('', false)) . $after;
- 
+
         } elseif ( is_author() ) {
              global $author;
             $userdata = get_userdata($author);
             echo $before . sprintf($text['author'], $userdata->display_name) . $after;
- 
+
         } elseif ( is_404() ) {
             echo $before . $text['404'] . $after;
         }
- 
+
         if ( get_query_var('paged') ) {
             if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
             echo __('Page','orangeidea') . ' ' . get_query_var('paged');
             if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
         }
- 
+
         echo '</div><!-- .breadcrumbs -->';
- 
+
     }
-	
-	
+
+
 }
 function crumbs_tax($term_id, $tax, $sep){
 	$termlink = array();
@@ -944,5 +944,20 @@ global $oi_options; ?>
 add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 
+// replace names of category
+function rename_post_formats($translation, $text, $context, $domain) {
+    $names = array(
+        'Audio'  => 'Single/Mixtape',
+				'Standard' => 'Event',
+				'Quote' => 'Featured',
+				'Image' => '-',
+				'Gallery' => '-'
+    );
+    if ($context == 'Post format') {
+        $translation = str_replace(array_keys($names), array_values($names), $text);
+    }
+    return $translation;
+}
+add_filter('gettext_with_context', 'rename_post_formats', 10, 4);
 
 ?>
