@@ -5,11 +5,8 @@
 
 #TODO
 - fix oi_logo_place section for mobile
-- fix mobile menu icon(x)
-- fix logo container(x)
 - fix mobile logo container
 - update post page styling
-- update post format naming conventions
 - organize category sections to fit new format
 - move search bar to above side bar
 - change and remove post format admin labels [added function in functions.php to replace labels] (x)
@@ -25,9 +22,8 @@
 - fix mobile post feature images(x)
 - update homepage styling with content box shadows (x)
 - header uniform color (x)
-
-
-
+- fix logo container(x)
+- fix mobile menu icon(x)
 
 
 #features new
@@ -42,6 +38,7 @@
 - for audio posts clicking on featured image plays song as to save the_time
 from going to actual post. subsequent to custom player. might be a plugin
 - music player using soundcloud/audiomack/spotify api
+
 
 #PURPOSE
 create posting faster.
