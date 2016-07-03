@@ -39,6 +39,9 @@
 - latest post icons in mobile view
 - instagram feed
 - dynamic footer (idk how yet)
+- for audio posts clicking on featured image plays song as to save the_time
+from going to actual post. subsequent to custom player. might be a plugin
+- music player using soundcloud/audiomack/spotify api
 
 #PURPOSE
 create posting faster.
