@@ -9,6 +9,7 @@
 - update post page styling
 - organize category sections to fit new format
 - move search bar to above side bar
+- share icons on homepage cards
 - change and remove post format admin labels [added function in functions.php to replace labels] (x)
 - remove category section in header (x)
 - remove category section in mobile header (x)
@@ -27,19 +28,21 @@
 
 
 #features new
-- upvote
+- music player using soundcloud/audiomack/spotify api
 - section icons
-- auto select post category when post format selected
 - section specific colors
 - author detail
-- latest post icons in mobile view
+- upvote
+- auto select post category when post format selected
 - instagram feed
 - dynamic footer (idk how yet)
+- full width slider on homepage and all homepage of content category
 - for audio posts clicking on featured image plays song as to save the_time
-from going to actual post. subsequent to custom player. might be a plugin
-- music player using soundcloud/audiomack/spotify api
+from going to actual post. subsequent to custom player. might be a plugin (this feature will be delayed for the app in node using embedly)
 
 
 #PURPOSE
 create posting faster.
 organize styling better.
+distribute content efficiently.
+promote content better as i see fit.
