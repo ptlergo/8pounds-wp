@@ -62,6 +62,7 @@
   .oi_head_holder{
     position: fixed;
     top: 0;
+    z-index: 1;
   }
   .oi_logo_inner_holder img{
     width: 40%;
@@ -90,6 +91,12 @@
     margin: 5px;
     box-shadow: 0px 1px 3px #b8b8b8;
   }
+
+  .oi_posts_holder {
+      position: relative;
+      top: 100px;
+  }
+
 }
 
 /*@media only screen and (min-width: 900px) {

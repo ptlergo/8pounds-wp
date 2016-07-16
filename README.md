@@ -6,7 +6,6 @@
 #TODO
 - fix oi_logo_place section for mobile
 - fix mobile logo container
-- fix max image size
 - update post page styling
 - organize category sections to fit new format
 - move search bar to above side bar
@@ -26,6 +25,9 @@
 - header uniform color (x)
 - fix logo container(x)
 - fix mobile menu icon(x)
+- fix max image size(x)
+- fix homepage mobile posts container(x)
+
 
 
 #features new
