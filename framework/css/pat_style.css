@@ -2,15 +2,25 @@
   styling by Patrick Funom
 */
 
+
 /*DESKTOP*/
 @media only screen and (min-width: 900px) {
   .oi_posts_holder, .oi_logo_place{
     width: 70%;
   }
 
+  .oi_post_meta_data_holder{
+    max-width: 500px;
+  }
+
   /*logo container*/
   .oi_logo_inner_holder img{
     width: 30%;
+  }
+
+  /*hide embedly icon*/
+  .card .brd{
+    display: none;
   }
 
   .oi_logo_inner_holder {
