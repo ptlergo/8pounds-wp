@@ -4,12 +4,14 @@
 ### mr-blogger wordpress theme
 
 #TODO
-- fix oi_logo_place section for mobile
-- fix mobile logo container
+- fix header to sticky
 - update post page styling
+- integrate addthis
 - organize category sections to fit new format
 - move search bar to above side bar
 - share icons on homepage cards
+- fix category pages
+- replace logo with svg
 - change and remove post format admin labels [added function in functions.php to replace labels] (x)
 - remove category section in header (x)
 - remove category section in mobile header (x)
@@ -27,6 +29,10 @@
 - fix mobile menu icon(x)
 - fix max image size(x)
 - fix homepage mobile posts container(x)
+- remove comment section(x)
+- change all categories (x)
+- fix mobile logo container for mobile(x)
+
 
 
 

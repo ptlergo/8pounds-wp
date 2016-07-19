@@ -59,14 +59,23 @@
 /*MOBILE*/
 @media (max-width: 767px) and (min-width: 0px) {
   /*sticky nav*/
-  .oi_head_holder{
+  /*.oi_head_holder{
     position: fixed;
     top: 0;
     z-index: 1;
-  }
+  }*/
   .oi_logo_inner_holder img{
     width: 40%;
     float: left;
+  }
+
+  .oi_logo{
+    height: 50px;
+  }
+
+  .oi_logo_inner_holder{
+    padding-top: 0px;
+    margin: 25px;
   }
 
   .oi_main_menu_opener{
@@ -75,13 +84,12 @@
     margin-top: -25px;
   }
 
+
+
   .oi_single_post{
-    padding-top: 20%;
+    padding-top: 0%;
   }
 
-  .oi_logo_place{
-    height: 100px !important;
-  }
   .oi_post_tringle{
     display: none;
   }
@@ -94,7 +102,7 @@
 
   .oi_posts_holder {
       position: relative;
-      top: 100px;
+      top: 0;
   }
 
 }
