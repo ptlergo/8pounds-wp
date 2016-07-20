@@ -5,6 +5,7 @@
 
 #TODO
 - fix header to sticky
+- create audio player
 - update post page styling
 - integrate addthis
 - organize category sections to fit new format
@@ -12,6 +13,7 @@
 - share icons on homepage cards
 - fix category pages
 - replace logo with svg
+- create feature post highlight on main page (feature selected from post create page)
 - change and remove post format admin labels [added function in functions.php to replace labels] (x)
 - remove category section in header (x)
 - remove category section in mobile header (x)

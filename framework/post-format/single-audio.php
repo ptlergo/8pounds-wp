@@ -36,7 +36,7 @@
      	<h1><?php the_title(); ?></h1>
 		</div>
 		<div class="new_single_post_content">
-     	<div class="oi_single_post_conent">
+     	<div class="oi_single_post_content">
  		<?php the_content(); ?>
              <div class="clearfix"></div>
          <hr>
