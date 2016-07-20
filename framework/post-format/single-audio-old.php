@@ -1,5 +1,4 @@
- <!-- single/mixtape post format
- edit: patrick funom - 07/19/16 -->
+
  <?php  global $smof_data; ?>
  <?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
 
@@ -34,8 +33,6 @@
              <span class="colored"><?php echo getPostViews(get_the_ID());?></span>
          </div>
      	<h1><?php the_title(); ?></h1>
-		</div>
-		<div class="new_single_post_content">
      	<div class="oi_single_post_conent">
  		<?php the_content(); ?>
              <div class="clearfix"></div>
@@ -44,5 +41,5 @@
  			<?php comments_template(); ?>
          </div>
          </div>
-			 </div>
+     </div>
  </div>

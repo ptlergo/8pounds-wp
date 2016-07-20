@@ -1,4 +1,5 @@
 <?php
+
 $layout = get_post_meta($post->ID, 'posts_layout', 1);
 if ($layout == 'Wide'){
 		$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'post-wide');

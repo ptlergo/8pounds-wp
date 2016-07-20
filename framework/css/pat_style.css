@@ -2,6 +2,10 @@
   styling by Patrick Funom
 */
 
+/*hide post views in meta data*/
+.colored, .oi_popular_widget_views{
+  display: none;
+}
 
 /*DESKTOP*/
 @media only screen and (min-width: 900px) {
@@ -103,6 +107,16 @@
   .oi_posts_holder {
       position: relative;
       top: 0;
+  }
+
+  /*post page*/
+  .new_single_post_content, .oi_single_post_content{
+  padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-family: Walfork,Walsheim,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #ffffff;
   }
 
 }

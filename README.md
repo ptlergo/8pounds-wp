@@ -32,6 +32,10 @@
 - remove comment section(x)
 - change all categories (x)
 - fix mobile logo container for mobile(x)
+- remove post views from meta data(x)
+- update post page styling mobile(x)
+
+
 
 
 
