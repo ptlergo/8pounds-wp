@@ -24,7 +24,8 @@
      <hr>
  	<?php echo substr($slug, '0', '-2');?>
      <hr>
-     <?php echo getPostViews(get_the_ID());?>
+     <!-- post views -->
+     <!-- <?php echo getPostViews(get_the_ID());?> -->
  </div>
  <div class="oi_single_post_audio">
  	<img class="img-responsive" src="<?php echo $large_image_url[0]; ?>">

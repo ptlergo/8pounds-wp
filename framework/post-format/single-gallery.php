@@ -27,7 +27,8 @@ if (isset($catt) && ($catt!='')){
     <hr>
 	<?php echo substr($slug, '0', '-2');?>
     <hr>
-    <?php echo getPostViews(get_the_ID());?>
+		<!-- post meta views -->
+    <!-- <?php echo getPostViews(get_the_ID());?> -->
 </div>
 <div class="oi_single_post_images">
 	  <div class="flexslider oi_flex_loading oi_vc_gal">

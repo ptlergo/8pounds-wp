@@ -6,6 +6,8 @@
 #TODO
 - fix header to sticky
 - create audio player
+- audiomack player
+- datpiff player
 - update post page styling
 - integrate addthis
 - organize category sections to fit new format
@@ -36,6 +38,8 @@
 - fix mobile logo container for mobile(x)
 - remove post views from meta data(x)
 - update post page styling mobile(x)
+- alter post metadata section and remove view counts (x)
+
 
 
 
@@ -47,6 +51,7 @@
 - section icons
 - section specific colors
 - author detail
+- meta data section features (upvote, section icons)
 - upvote
 - auto select post category when post format selected
 - instagram feed

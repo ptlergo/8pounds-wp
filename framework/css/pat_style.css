@@ -7,10 +7,34 @@
   display: none;
 }
 
+.oi_after_logo .header_menu{
+  margin-left: auto;
+}
+
+.oi_single_post_audio, .oi_single_post_video, .oi_single_post_image, .oi_single_post_gallery{
+  background: #ffffff;
+}
 /*DESKTOP*/
 @media only screen and (min-width: 900px) {
   .oi_posts_holder, .oi_logo_place{
     width: 70%;
+  }
+
+  .new_single_post_content, .oi_single_post_content{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-family: Walfork,Walsheim,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+
+  /*post image border*/
+  .oi_single_post .oi_single_post_audio .img-responsive{
+    width: 45% !important;
+    /*border: solid 10px #28292e;*/
+    margin: 2% auto;
+
   }
 
   .oi_post_meta_data_holder{
@@ -42,6 +66,10 @@
     margin: 5px;
     box-shadow: 0px 1px 3px #b8b8b8;
   }
+  .oi_single_post_meta{
+    width: 10% !important;
+  }
+
 
   .oi_post_tringle{
     left: inherit;
@@ -57,6 +85,13 @@
 
   .oi_popular_widget_post_holder{
     padding: 5px;
+  }
+
+  /*post page*/
+  .oi_single_post_audio{
+    width: 85%;
+    float: right;
+
   }
 }
 
@@ -119,9 +154,12 @@
     background: #ffffff;
   }
 
+
+
   /*iframe audio player*/
   .oi_single_post_content iframe{
     width: 100%;
+    /*height: 80px;*/
   }
 }
 

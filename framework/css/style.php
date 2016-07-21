@@ -8,9 +8,9 @@ function hex2rgba($color, $opacity = false) {
 
 	//Return default if no color provided
 	if(empty($color))
-          return $default; 
+          return $default;
 
-	//Sanitize $color if "#" is provided 
+	//Sanitize $color if "#" is provided
         if ($color[0] == '#' ) {
         	$color = substr( $color, 1 );
         }
@@ -41,7 +41,7 @@ function hex2rgba($color, $opacity = false) {
 }
 ?>
 
-/* 
+/*
 *	=================================================================================================================================================
 *	GENERATED CSS FILE
 *	=================================================================================================================================================
@@ -51,7 +51,7 @@ function hex2rgba($color, $opacity = false) {
 
 h1, h2, h3, h4, h5, h6:not(.oi_blog_legend_descr) {
 	font-family: '<?php echo $oi_options['oi_typo_headers']['font-family']; ?>' !important;
-	
+
 }
 
 
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6:not(.oi_blog_legend_descr) {
 }
 
 .oi_logo_place { background:<?php echo $oi_options['oi_logo_area_bg']?>}
-.oi_logo_inner_description {color:<?php echo $oi_options['oi_logo_area_tagline']?>} 
+.oi_logo_inner_description {color:<?php echo $oi_options['oi_logo_area_tagline']?>}
 .oi_after_logo, .oi_after_logo .header_menu > li > .my_drop > ul >li >a{ background:<?php echo $oi_options['oi_menu_area_bg']?>}
 .header_menu > li > .my_drop > ul >li >a, .oi_after_logo .header_menu > li:first-child > a, .oi_after_logo .header_menu > li > .my_drop > ul > li {border-color: <?php echo $oi_options['oi_menu_area_border']?>;}
 .oi_after_logo .header_menu > li > a, .oi_after_logo .header_menu > li > .my_drop > ul >li >a {color:<?php echo $oi_options['oi_menu_area_color']?>}
@@ -123,13 +123,5 @@ h1, h2, h3, h4, h5, h6:not(.oi_blog_legend_descr) {
 .oi_rigth_menu_place {background-color: <?php echo $oi_options['oi_rigth_menu_place_bg']?>; border-color:<?php echo $oi_options['oi_rigth_menu_place_border']?>;}
 .oi_rigth_menu_place_bottom {color: <?php echo $oi_options['oi_rigth_menu_place_color']?>; border-color:<?php echo $oi_options['oi_rigth_menu_place_border']?>}
 .oi_rigth_menu_place_top {background:<?php echo $oi_options['oi_rigth_menu_place_top_bg']?> }
-.oi_rigth_menu_place_top a {color: <?php echo $oi_options['oi_log_reg_color']?>} 
+.oi_rigth_menu_place_top a {color: <?php echo $oi_options['oi_log_reg_color']?>}
 .oi_rigth_menu_place_top a.oi_login { border-color:<?php echo $oi_options['oi_log_reg_border_sep']?>}
-
-
-
-
-
-
-
-
