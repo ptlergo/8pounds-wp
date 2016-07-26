@@ -1,5 +1,3 @@
-<!-- Event post format -->
-<!-- EDIT: Patrick Funom 07/26/16 -->
 <?php  global $smof_data; ?>
 <?php $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'large'); ?>
 
@@ -19,9 +17,15 @@ if (isset($catt) && ($catt!='')){
 	setPostViews(get_the_ID());
 ?>
 
+<div class="oi_single_post_meta">
+	<?php the_time('d F') ?><br><span class="oi_year"><?php the_time('Y') ?>
+    <hr>
+	<?php echo substr($slug, '0', '-2');?>
+    <hr>
+    <?php echo getPostViews(get_the_ID());?>
+</div>
 
 <div class="oi_single_post_standard">
-  	<img class="img-responsive" src="<?php echo $large_image_url[0]; ?>">
     <div class="oi_single_post_title">
     	<div class="hidden-lg oi_small_dev_singlepost_meta">
             <strong><?php the_time('d F') ?> <span class="oi_year"><?php the_time('Y') ?></strong>

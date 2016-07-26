@@ -20,6 +20,19 @@
     width: 70%;
   }
 
+  /*Event Post Style*/
+  .single-format-standard .visible-lg{
+    display: none !important;
+  }
+
+  .single-format-standard .oi_single_post{
+    width: 100%;
+  }
+
+  .oi_single_post_standard{
+    margin-left: 0 !important;
+  }
+
   .new_single_post_content, .oi_single_post_content{
     padding-left: 20px;
     padding-right: 20px;
