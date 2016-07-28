@@ -23,7 +23,7 @@ if (isset($catt) && ($catt!='')){
 	<?php echo substr($slug, '0', '-2');?>
     <hr>
     <?php echo getPostViews(get_the_ID());?>
-</div>
+</div>                     
 
 <div class="oi_single_post_standard">
     <div class="oi_single_post_title">

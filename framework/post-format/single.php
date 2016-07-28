@@ -21,8 +21,10 @@ if (isset($catt) && ($catt!='')){
 
 
 <div class="oi_single_post_standard">
-  	<img class="img-responsive" src="<?php echo $large_image_url[0]; ?>">
-    <div class="oi_single_post_title">
+  	<div class="event-img-container">
+  		<img class="img-responsive" src="<?php echo $large_image_url[0]; ?>">
+		</div>
+		<div class="oi_single_post_title">
     	<div class="hidden-lg oi_small_dev_singlepost_meta">
             <strong><?php the_time('d F') ?> <span class="oi_year"><?php the_time('Y') ?></strong>
             <span class="colored"><?php echo getPostViews(get_the_ID());?></span>
