@@ -7,6 +7,10 @@
   display: none;
 }
 
+.player-right{
+  background: red;
+}
+
 #wrap.embed div.player-right a.via-audiomack{
   display: none;
 }
@@ -47,7 +51,7 @@
   }
 
   .single-format-standard .oi_single_post{
-    width: 100%;
+    width: 100% !important;
   }
   .single-format-standard .oi_single_post .oi_single_post_title{
     padding: 10px 250px 10px 250px;
