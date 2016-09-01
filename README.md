@@ -4,19 +4,20 @@
 ### mr-blogger wordpress theme
 
 #TODO
+##upnext
+- author detail(feature)
+- update post page styling
+- organize category sections to fit new format
+- move search bar to above side bar
+- share icons on homepage cards
+- replace logo with svg
+- create feature post highlight on main page (feature selected from post create page)
+- change and remove post format admin labels [added function in functions.php to replace
 - fix header to sticky
 - create audio player
 - audiomack player
 - datpiff player
-- update post page styling
-- integrate addthis
-- organize category sections to fit new format
-- move search bar to above side bar
-- share icons on homepage cards
-- fix category pages
-- replace logo with svg
-- create feature post highlight on main page (feature selected from post create page)
-- change and remove post format admin labels [added function in functions.php to replace labels] (x)
+- labels] (x)
 - remove category section in header (x)
 - remove category section in mobile header (x)
 - remove social media from header (x)
@@ -39,18 +40,14 @@
 - remove post views from meta data(x)
 - update post page styling mobile(x)
 - alter post metadata section and remove view counts (x)
+- integrate addthis(x)
+- fix category pages(x)
 
 
-
-
-
-
-
-#features new
+##features new
 - music player using soundcloud/audiomack/spotify api
 - section icons
 - section specific colors
-- author detail
 - meta data section features (upvote, section icons)
 - upvote
 - auto select post category when post format selected
@@ -66,3 +63,4 @@ create posting faster.
 organize styling better.
 distribute content efficiently.
 promote content better as i see fit.
+increase engagement
