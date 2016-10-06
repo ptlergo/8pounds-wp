@@ -88,7 +88,7 @@ if( !function_exists( 'wpsabox_author_box' ) ) {
 
 
             // author box clearfix
-            $saboxmeta .= '<div class="clearfix"></div>';
+            // $saboxmeta .= '<div class="clearfix"></div>';
 
             // author box social icons
 
