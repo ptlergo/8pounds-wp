@@ -1,6 +1,7 @@
 
   .saboxplugin-wrap {
     text-align: center;
+    border: none !important;
   }
 
   .saboxplugin-wrap .saboxplugin-gravatar {
