@@ -148,6 +148,13 @@
     top: 0;
     z-index: 1;
   }*/
+
+  /*mobile sidebar visibility. sidebar sticky must be off*/
+  .oi_small_sidebar_bottom, .oi_big_sidebar_bottom{
+    display: block !important;
+    width: 100% !important;
+    padding-top: 5% !important;
+  }
   .oi_logo_inner_holder img{
     width: 40%;
     float: left;
