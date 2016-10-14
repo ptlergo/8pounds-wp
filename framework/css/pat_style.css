@@ -154,6 +154,8 @@
     display: block !important;
     width: 100% !important;
     padding-top: 5% !important;
+    padding-bottom: 5% !important;
+    box-shadow: -1px 0px 5px #b8b8b8;
   }
   .oi_logo_inner_holder img{
     width: 40%;
