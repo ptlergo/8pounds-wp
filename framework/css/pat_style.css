@@ -148,25 +148,7 @@
     top: 0;
     z-index: 1;
   }*/
-  /*hide title of featured post*/
-.oi_single_post_standard .oi_single_post_title h1 {
-	display: none !important;
-}
-
-	iframe {
-		height: inherit;
-		width: 100%;
-	}
   
-	/*sidebar on mobile visible*/
-	.oi_small_sidebar_bottom, .oi_big_sidebar_bottom {
-		display: block !important;
-		width: 100% !important;
-		padding-top: 5% !important;
-		padding-bottom: 5% !important;
-		box-shadow: -1px 0 5px #b8b8b8;
-	}
-
   .oi_logo_inner_holder img{
     width: 40%;
     float: left;
