@@ -4,28 +4,30 @@
 ### mr-blogger wordpress theme
 
 #TODO
-##upnext
-- author detail(feature)
-- update post page styling
-- organize category sections to fit new format
+- expand category sections to full width
 - move search bar to above side bar
-- share icons on homepage cards
-- replace logo with svg
+- 8lb social media icons in footer
+- fix mobile animation viewport trigger
 - create feature post highlight on main page (feature selected from post create page)
-- change and remove post format admin labels [added function in functions.php to replace
 - fix header to sticky
-- create audio player
-- audiomack player
-- datpiff player
-- labels] (x)
+- fix logo as svg
+- fix logo to fit header
+- fix sidebar styling for 'popular' shortcode
+- fix sidebar styling for 'recent' shortcode
+- explore other sidebar styling options to increase page sticky
+- custom audio player styling(audiomack, SC, datpiff, spotify, etc.)
+- section icons
+- author detail(feature. using simple author box plugin)(x)
+- update post page styling(x)
+- change and remove post format admin labels [added function in functions.php to replace (x)
 - remove category section in header (x)
 - remove category section in mobile header (x)
-- remove social media from header (x)
-- remove social media from post formats (x)
+- remove native social media from header (x)
+- remove native social media from post formats (x)
 - remove perm. header plugin. use something native(x)
-- remove small side bar that appears in center (x)
 - even sidebar and main page 70% to 30% (x)
-- header section 3 to 2(x)
+- remove small side bar that appears in center (x)
+- header section from 3 to 2(x)
 - flip post feature image side from right to left (x)
 - fix mobile post feature images(x)
 - update homepage styling with content box shadows (x)
@@ -43,24 +45,19 @@
 - integrate addthis(x)
 - fix category pages(x)
 
-
 ##features new
 - music player using soundcloud/audiomack/spotify api
-- section icons
 - section specific colors
-- meta data section features (upvote, section icons)
-- upvote
+- meta data section features icons
+- meta data section festure upvote
 - auto select post category when post format selected
 - instagram feed
-- dynamic footer (idk how yet)
-- full width slider on homepage and all homepage of content category
-- for audio posts clicking on featured image plays song as to save the_time
-from going to actual post. subsequent to custom player. might be a plugin (this feature will be delayed for the app in node using embedly)
-
 
 #PURPOSE
 create posting faster.
 organize styling better.
 distribute content efficiently.
 promote content better as i see fit.
-increase engagement
+increase engagement.
+increase website sticky.
+increase ease of use for contributors.
