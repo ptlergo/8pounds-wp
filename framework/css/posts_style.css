@@ -2,7 +2,11 @@
   styling for each posts type
   by: Patrick Funom
 */
-/*MOBILE*/
+/*
+======================================
+================MOBILE================
+======================================
+*/
 @media (max-width: 767px) and (min-width: 0px) {
 
   /*homepage post feed*/
@@ -46,7 +50,133 @@
   }
 }
 
-/*GENERAL STYLE*/
+/*
+=======================================
+================DESKTOP================
+=======================================
+*/
+@media only screen and (min-width: 900px) {
+  /*webpage section size*/
+  .oi_posts_holder, .oi_logo_place{
+    width: 70%;
+  }
+
+  .oi_single_post{
+    margin-right: 10px;
+    width: 70% !important;
+  }
+
+  .oi_single_post_audio .img-container{
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+  }
+
+  /*Event Post Style*/
+  .single-format-standard .visible-lg{
+    display: none !important;
+  }
+
+  .single-format-standard .oi_single_post{
+    width: 100% !important;
+  }
+
+  .single-format-standard .oi_single_post .oi_single_post_title{
+    padding: 10px 250px 10px 250px;
+  }
+
+  .oi_single_post_title{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .oi_single_post_standard{
+    margin-left: 0 !important;
+  }
+
+  .new_single_post_content, .oi_single_post_content{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-family: Walfork,Walsheim,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+
+  /*post image border*/
+  .oi_single_post .oi_single_post_audio .img-responsive{
+    width: 100% !important;
+    box-shadow: 0px 0px 15px #000000;
+  }
+
+  .oi_post_meta_data_holder{
+    max-width: 500px;
+  }
+
+  /*logo container*/
+  .oi_logo_inner_holder img{
+    width: 30%;
+  }
+
+  /*hide embedly icon*/
+  .card .brd{
+    display: none;
+  }
+
+  .oi_logo_inner_holder {
+    margin-left: 20px;
+    padding-top: 20px;
+  }
+
+  /*HEADER RESTYLING*/
+  .oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder{
+    height: 170px;
+  }
+
+  /*individual latest posts*/
+  .oi_post{
+    margin: 0px 5px 0px 5px;
+    box-shadow: 0px 1px 3px #b8b8b8;
+  }
+  .oi_single_post_meta{
+    width: 10% !important;
+  }
+  .oi_post_tringle{
+    left: inherit;
+    right: -1px;
+    transform: rotate(180deg);
+  }
+
+  /*side bar sticky*/
+  .oi_big_sidebar_bottom{
+    width: 29% !important;
+  }
+  .oi_popular_widget_post_holder{
+    padding-bottom: 10px;
+    box-shadow: -1px 0px 5px #b8b8b8;
+  }
+
+  /*post page*/
+  .oi_single_post_audio{
+    width: 85%;
+    float: right;
+  }
+}
+
+/*
+======================================
+================TABLET================
+======================================
+*/
+@media (max-width: 899px) and (min-width: 768px) {
+
+}
+
+/*
+=======================================
+================DEFAULT================
+=======================================
+*/
 /*hide post views in meta data*/
 .colored, .oi_popular_widget_views{
   display: none;
