@@ -7,29 +7,15 @@
   display: none;
 }
 
-.player-right{
-  background: red;
-}
-
 #wrap.embed div.player-right a.via-audiomack{
   display: none;
 }
+
 /*post page boder style*/
 .oi_big_sidebar_bottom .visible-lg, .oi_single_post_meta{
   box-shadow: 0px 1px 3px #b8b8b8;
 }
 
-.oi_logo_place{
-  margin-bottom: 0;
-}
-
-.oi_after_logo .header_menu{
-  margin-left: auto;
-}
-
-.oi_single_post_audio, .oi_single_post_video, .oi_single_post_image, .oi_single_post_gallery{
-  background: #ffffff;
-}
 /*DESKTOP*/
 @media only screen and (min-width: 900px) {
   .oi_posts_holder, .oi_logo_place{
@@ -142,13 +128,6 @@
 
 /*MOBILE*/
 @media (max-width: 767px) and (min-width: 0px) {
-  /*sticky nav*/
-  /*.oi_head_holder{
-    position: fixed;
-    top: 0;
-    z-index: 1;
-  }*/
-  
   /*mobile sidebar visibility. sidebar sticky must be off*/
   .oi_small_sidebar_bottom, .oi_big_sidebar_bottom{
     display: block !important;
