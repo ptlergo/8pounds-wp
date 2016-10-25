@@ -5,6 +5,7 @@
 /*MOBILE*/
 @media (max-width: 767px) and (min-width: 0px) {
 
+  /*homepage post feed*/
   .oi_single_post{
     padding-top: 0%;
   }
@@ -26,15 +27,13 @@
 
   /*post page*/
   .new_single_post_content, .oi_single_post_content{
-  padding-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
     font-size: 1.6rem;
     line-height: 1.9;
     font-family: Walfork,Walsheim,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background: #ffffff;
   }
-
-
 
   /*iframe audio player*/
   .oi_single_post_content iframe{

@@ -25,3 +25,11 @@
     margin-top: -25px;
   }
 }
+
+.oi_after_logo_search{
+  display: none !important;
+}
+
+span .fa .fa-search-plus .hidden-xs{
+  display: none !important;
+}
