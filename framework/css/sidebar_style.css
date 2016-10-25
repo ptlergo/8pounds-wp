@@ -1,8 +1,13 @@
 /*
-  styling for the sidebar
-  by: Patrick Funom
+**** styling for the sidebar
+**** by: Patrick Funom
 */
-/*MOBILE*/
+
+/*
+======================================
+================MOBILE================
+======================================
+*/
 @media (max-width: 767px) and (min-width: 0px) {
   /*mobile sidebar visibility. sidebar sticky must be off*/
   .oi_small_sidebar_bottom, .oi_big_sidebar_bottom{

@@ -1,8 +1,13 @@
 /*
-  styling for the header
-  by: Patrick Funom
+**** styling for the header
+**** by: Patrick Funom
 */
-/*MOBILE*/
+
+/*
+======================================
+================MOBILE================
+======================================
+*/
 @media (max-width: 767px) and (min-width: 0px) {
 
   .oi_logo_inner_holder img{
@@ -33,3 +38,17 @@
 span .fa .fa-search-plus .hidden-xs{
   display: none !important;
 }
+/*
+======================================
+================TABLET================
+======================================
+*/
+@media (max-width: 899px) and (min-width: 768px) {
+
+}
+
+/*
+=======================================
+================DEFAULT================
+=======================================
+*/
