@@ -20,16 +20,17 @@
 ======================================
 */
 @media (max-width: 767px) and (min-width: 0px) {
+  /* HEADER LOGO INLINED */
+  .logo_svg svg{
+    overflow: hidden;
+    background: green;
+    float: left;
+    height: 3em;
+    width: 30%;
+  }
+  /* MAIN LOGO CONTAINER */
   .oi_logo{
     height: 50px;
-  }
-
-  svg{
-    overflow: hidden;
-background: green;
-float: left;
-height: 3em;
-width: 30%;
   }
 
   /* LOGO CONTAINER SIZE */

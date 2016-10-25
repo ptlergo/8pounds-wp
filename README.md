@@ -10,13 +10,16 @@
 - fix mobile animation viewport trigger
 - create feature post highlight on main page (feature selected from post create page)
 - fix header to sticky
-- fix logo as svg
-- fix logo to fit header
 - fix sidebar styling for 'popular' shortcode
 - fix sidebar styling for 'recent' shortcode
 - explore other sidebar styling options to increase page sticky
 - custom audio player styling(audiomack, SC, datpiff, spotify, etc.)
 - section icons
+- fix author section
+- mobile sidebar converts to tabs [find plugin]
+- fix logo as svg(x)
+- fix logo to fit header(x)
+- remove search bar(x)
 - author detail(feature. using simple author box plugin)(x)
 - update post page styling(x)
 - change and remove post format admin labels [added function in functions.php to replace (x)
