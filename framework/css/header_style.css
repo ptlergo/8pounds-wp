@@ -23,14 +23,13 @@
   /* HEADER LOGO INLINED */
   .logo_svg svg{
     overflow: hidden;
-    background: green;
     float: left;
     height: 3em;
     width: 30%;
   }
   /* MAIN LOGO CONTAINER */
   .oi_logo{
-    height: 50px;
+    height: 60px;
   }
 
   /* LOGO CONTAINER SIZE */
@@ -44,8 +43,6 @@
     width: 10%;
     float: left;
     clear: both;
-    background: red;
-
   }
 
   .oi_main_menu_opener{
@@ -54,7 +51,11 @@
     margin-top: -25px;
   }
 }
-
+/* HAMBURGER MENU */
+.oi_logo .fa-navicon:before, .oi_logo .fa-reorder:before, .oi_logo .fa-bars:before{
+  color: #ffffff;
+}
+/* SEARCH BAR */
 .oi_after_logo_search{
   display: none !important;
 }
