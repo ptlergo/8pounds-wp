@@ -97,6 +97,20 @@
     float: right !important;
   }
 
+  .single-format-video .oi_single_post_title iframe {
+		width: 60%;
+    height: 300px;
+    margin: 0 0 5% 0;
+  }
+
+  /*======VIDEO FORMAT TITLE======*/
+  .single-format-video .oi_single_post_title h1 {
+    margin-bottom: 10%;
+    width: 85%;
+    font-size: 40px;
+  }
+
+
   /*======META SECTION SINGLES FORMAT======*/
   .oi_single_post_meta{
     width: 10% !important;
