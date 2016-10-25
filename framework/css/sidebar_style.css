@@ -1,0 +1,56 @@
+/*
+  styling for the sidebar
+  by: Patrick Funom
+*/
+/*MOBILE*/
+@media (max-width: 767px) and (min-width: 0px) {
+  /*mobile sidebar visibility. sidebar sticky must be off*/
+  .oi_small_sidebar_bottom, .oi_big_sidebar_bottom{
+    display: block !important;
+    width: 100% !important;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+    box-shadow: -1px 0px 5px #b8b8b8;
+  }
+
+  .oi_single_post{
+    padding-top: 0%;
+  }
+
+  .oi_post_tringle{
+    display: none;
+  }
+
+  /*individual latest posts*/
+  .oi_post{
+    margin: 20px;
+    box-shadow: 0px 1px 3px #b8b8b8;
+  }
+
+  .oi_posts_holder {
+      position: relative;
+      top: 0;
+  }
+
+  /*post page*/
+  .new_single_post_content, .oi_single_post_content{
+  padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    line-height: 1.9;
+    font-family: Walfork,Walsheim,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background: #ffffff;
+  }
+
+
+
+  /*iframe audio player*/
+  .oi_single_post_content iframe{
+    width: 100%;
+  }
+
+  .single .single-post .single-format-video iframe{
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

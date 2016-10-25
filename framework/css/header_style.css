@@ -2,3 +2,26 @@
   styling for the header
   by: Patrick Funom
 */
+/*MOBILE*/
+@media (max-width: 767px) and (min-width: 0px) {
+
+  .oi_logo_inner_holder img{
+    width: 40%;
+    float: left;
+  }
+
+  .oi_logo{
+    height: 50px;
+  }
+
+  .oi_logo_inner_holder{
+    padding-top: 0px;
+    margin: 25px;
+  }
+
+  .oi_main_menu_opener{
+    float: right;
+    color: #ffffff;
+    margin-top: -25px;
+  }
+}

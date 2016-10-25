@@ -9,5 +9,7 @@ Version: 1.1.0
 @import url('framework/bootstrap/bootstrap.css');
 @import url('framework/css/main_style.css');
 @import url('framework/css/pat_style.css');
-@import url('framework/css/simple_author_style.css');
+@import url('framework/css/header_style.css');
+@import url('framework/css/sidebar_style.css');
 @import url('framework/css/options.css');
+@import url('framework/css/simple_author_style.css');
