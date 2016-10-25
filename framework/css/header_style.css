@@ -24,16 +24,27 @@
     height: 50px;
   }
 
+  svg{
+    overflow: hidden;
+background: green;
+float: left;
+height: 3em;
+width: 30%;
+  }
+
   /* LOGO CONTAINER SIZE */
   .oi_logo_inner_holder{
     margin: 0;
-    padding: 0;
+    padding: 2%;
     width: 100%;
   }
 
   .oi_logo_inner_holder img{
     width: 10%;
     float: left;
+    clear: both;
+    background: red;
+
   }
 
   .oi_main_menu_opener{
