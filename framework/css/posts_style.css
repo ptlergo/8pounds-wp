@@ -89,10 +89,12 @@
     transform: rotate(180deg);
   }
 
-  /*======SINGLE POSTS======*/
-  .oi_single_post{
-    margin-right: 10px;
-    width: 70% !important;
+
+
+  /*======AUDIO & VIDEO POST FORMAT======*/
+  .oi_single_post_audio, .single-format-video .oi_single_post_title {
+    width: 85% !important;
+    float: right !important;
   }
 
   /*======META SECTION SINGLES FORMAT======*/
@@ -135,6 +137,7 @@
     padding: 10px 250px 10px 250px;
   }
 }
+
 
 /*
 ======================================
