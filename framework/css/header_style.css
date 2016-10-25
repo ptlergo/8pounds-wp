@@ -13,6 +13,10 @@
   width: 100%;
 }
 
+/* HEADER RIGHT SIDE */
+.oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder {
+    height: 170px;
+}
 
 /*
 ======================================
@@ -34,7 +38,7 @@
     z-index: 1;
     clear: both;
   }
-  
+
   /* MAIN LOGO CONTAINER */
   .oi_logo{
     height: 60px;
