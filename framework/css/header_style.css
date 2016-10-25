@@ -4,24 +4,36 @@
 */
 
 /*
+=======================================
+================DEFAULT================
+=======================================
+*/
+/* LOGO IMAGE CONTAINER */
+.oi_logo_inner_holder img{
+  width: 100%;
+}
+
+
+/*
 ======================================
 ================MOBILE================
 ======================================
 */
 @media (max-width: 767px) and (min-width: 0px) {
-
-  .oi_logo_inner_holder img{
-    width: 40%;
-    float: left;
-  }
-
   .oi_logo{
     height: 50px;
   }
 
+  /* LOGO CONTAINER SIZE */
   .oi_logo_inner_holder{
-    padding-top: 0px;
-    margin: 25px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .oi_logo_inner_holder img{
+    width: 10%;
+    float: left;
   }
 
   .oi_main_menu_opener{
@@ -45,10 +57,25 @@ span .fa .fa-search-plus .hidden-xs{
 */
 @media (max-width: 899px) and (min-width: 768px) {
 
+  /* LOGO CONTAINER SIZE */
+  .oi_logo .oi_logo_inner_holder{
+    width: 100% !important;
+    padding: 0;
+    background: red !important;
+  }
+
 }
 
 /*
 =======================================
-================DEFAULT================
+================DESKTOP================
 =======================================
 */
+@media only screen and (min-width: 900px) {
+  /* LOGO CONTAINER SIZE */
+  .oi_logo_inner_holder{
+    margin: 0;
+    padding: 0;
+    width:300px;
+  }
+}
