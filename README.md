@@ -9,7 +9,6 @@
 - 8lb social media icons in footer
 - fix mobile animation viewport trigger
 - create feature post highlight on main page (feature selected from post create page)
-- fix header to sticky
 - fix sidebar styling for 'popular' shortcode
 - fix sidebar styling for 'recent' shortcode
 - explore other sidebar styling options to increase page sticky
@@ -17,6 +16,7 @@
 - section icons
 - fix author section
 - mobile sidebar converts to tabs [find plugin]
+- fix header to sticky(x)
 - fix logo as svg(x)
 - fix logo to fit header(x)
 - remove search bar(x)
