@@ -67,9 +67,10 @@
   display: none !important;
 }
 
-span .fa .fa-search-plus .hidden-xs{
-  display: none !important;
+.oi_after_logo .fa{
+  display: none;
 }
+
 /*
 ======================================
 ================TABLET================
@@ -103,4 +104,6 @@ span .fa .fa-search-plus .hidden-xs{
   .oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder {
       height: 170px;
   }
+
+
 }
