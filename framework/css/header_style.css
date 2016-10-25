@@ -27,6 +27,13 @@
     height: 3em;
     width: 30%;
   }
+  /* STICKY HEADER */
+.oi_head_holder{
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  clear: both;
+}
   /* MAIN LOGO CONTAINER */
   .oi_logo{
     height: 60px;
