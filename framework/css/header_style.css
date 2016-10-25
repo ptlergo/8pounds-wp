@@ -13,11 +13,6 @@
   width: 100%;
 }
 
-/* HEADER RIGHT SIDE */
-.oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder {
-    height: 170px;
-}
-
 /*
 ======================================
 ================MOBILE================
@@ -102,5 +97,10 @@ span .fa .fa-search-plus .hidden-xs{
     margin: 0;
     padding: 0;
     width:300px;
+  }
+
+  /* HEADER RIGHT SIDE */
+  .oi_rigth_menu_place, .oi_head_holder, .oi_logo_inner_holder {
+      height: 170px;
   }
 }
