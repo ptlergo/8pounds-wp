@@ -8,21 +8,21 @@
 ================DEFAULT================
 =======================================
 */
-/*hide post views in meta data*/
+/*======POST VIEWS META======*/
 .colored, .oi_popular_widget_views{
   display: none;
 }
 
-#wrap.embed div.player-right a.via-audiomack{
-  display: none;
-}
 
-/*post page boder style*/
+/*======POST FEED BORDER======*/
+.oi_post{
+  margin: 0px 5px 0px 5px;
+  box-shadow: 0px 1px 3px #b8b8b8;
+}
+/*======POST FORMAT META BOX======*/
 .oi_big_sidebar_bottom .visible-lg, .oi_single_post_meta{
   box-shadow: 0px 1px 3px #b8b8b8;
 }
-
-
 /*
 ======================================
 ================MOBILE================
@@ -30,7 +30,7 @@
 */
 @media (max-width: 767px) and (min-width: 0px) {
 
-  /*homepage post feed*/
+  /*======POST FEED======*/
   .oi_single_post{
     padding-top: 0%;
   }
@@ -39,7 +39,7 @@
     display: none;
   }
 
-  /*individual latest posts*/
+  /*======INDIVIDUAL POSTS======*/
   .oi_post{
     margin: 20px;
     box-shadow: 0px 1px 3px #b8b8b8;
@@ -50,17 +50,16 @@
       top: 0;
   }
 
-  /*post page*/
+  /*======SINGLE POST FORMAT======*/
   .new_single_post_content, .oi_single_post_content{
     padding-left: 20px;
     padding-right: 20px;
     font-size: 1.6rem;
     line-height: 1.9;
-    font-family: Walfork,Walsheim,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background: #ffffff;
   }
 
-  /*iframe audio player*/
+  /*======SINGLE POST IFRAMES======*/
   .oi_single_post_content iframe{
     width: 100%;
   }
@@ -77,9 +76,17 @@
 =======================================
 */
 @media only screen and (min-width: 900px) {
-  /*webpage section size*/
+
+  /*======WEBSITE SECTION SIZE======*/
   .oi_posts_holder, .oi_logo_place{
     width: 70%;
+  }
+
+  /*======POST FEED TRIANGLES======*/
+  .oi_post_tringle{
+    left: inherit;
+    right: -1px;
+    transform: rotate(180deg);
   }
 
   /*======SINGLE POSTS======*/
@@ -88,7 +95,12 @@
     width: 70% !important;
   }
 
-  /* POST CONTENT AREA */
+  /*======META SECTION SINGLES FORMAT======*/
+  .oi_single_post_meta{
+    width: 10% !important;
+  }
+
+  /*======POST CONTENT AREA======*/
   .new_single_post_content, .oi_single_post_content{
     padding: 0 2% 0 2%;
     font-size: 1.5rem;
@@ -99,7 +111,7 @@
     margin-left: 0 !important;
   }
 
-  /* SINGLE POST IMAGE CONTAINER */
+  /*======SINGLE POST IMAGE CONTAINER======*/
   .oi_single_post_audio .img-container{
     width: 500px;
     margin: 5% auto;
