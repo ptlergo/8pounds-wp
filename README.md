@@ -3,19 +3,20 @@
 
 ### mr-blogger wordpress theme
 
-#TODO
-- expand category sections to full width
-- move search bar to above side bar
-- 8lb social media icons in footer
-- fix mobile animation viewport trigger
+# TODO
+
 - create feature post highlight on main page (feature selected from post create page)
-- fix sidebar styling for 'popular' shortcode
-- fix sidebar styling for 'recent' shortcode
 - explore other sidebar styling options to increase page sticky
 - custom audio player styling(audiomack, SC, datpiff, spotify, etc.)
 - section icons
-- fix author section
-- mobile sidebar converts to tabs [find plugin]
+- fix sidebar styling for 'popular' shortcode(x)
+- fix sidebar styling for 'recent' shortcode(x)
+- expand category sections to full width(x)
+- move search bar to above side bar(x)
+- 8lb social media icons in footer(x)
+- fix mobile animation viewport trigger(x)
+- fix author section(x)
+- mobile sidebar converts to tabs(x)
 - fix header to sticky(x)
 - fix logo as svg(x)
 - fix logo to fit header(x)
@@ -48,7 +49,7 @@
 - integrate addthis(x)
 - fix category pages(x)
 
-##features new
+## features new
 - music player using soundcloud/audiomack/spotify api
 - section specific colors
 - meta data section features icons
@@ -56,7 +57,7 @@
 - auto select post category when post format selected
 - instagram feed
 
-#PURPOSE
+# PURPOSE
 create posting faster.
 organize styling better.
 distribute content efficiently.
